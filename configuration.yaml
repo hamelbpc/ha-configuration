@@ -11,6 +11,8 @@ script: !include scripts.yaml
 scene: !include scenes.yaml
 
 homeassistant:
+  allowlist_external_dirs:
+    - "/config"
   customize:
     sensor.solar_e_today:
       state_class: "total_increasing"
@@ -38,3 +40,8 @@ sensor:
     name: Solar Status #OK When No Error
     resource: http://192.168.81.157/home.cgi
     value_template: "{{ value.split()[13].split()[0] }}" 
+    
+folder_watcher:
+  - folder: /config
+  
+  
