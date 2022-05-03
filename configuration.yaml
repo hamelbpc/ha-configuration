@@ -54,6 +54,7 @@ folder_watcher:
       - '*.js'
       - '*.html'
       - '*.css'
+      - '*.sh'
       
 shell_command:
   push_to_github: "./shellscripts/config_folder_changed.sh"
