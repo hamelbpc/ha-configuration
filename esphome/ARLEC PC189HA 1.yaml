@@ -1,0 +1,77 @@
+
+
+esphome:
+  name: arlec_pc189ha_1
+  platform: ESP8266
+  board: esp01_1m
+
+wifi:
+  ssid: "Mxxxxx-NUE"
+  password: "xxxxxxx38"
+
+  # Enable fallback hotspot (captive portal) in case wifi connection fails
+  ap:
+    ssid: "Arlec Pc189Ha 1 Fallback Hotspot"
+    password: "bVMtB585NjQv"
+
+captive_portal:
+
+# Enable logging
+logger:
+
+# Enable Home Assistant API
+api:
+
+ota:
+
+web_server:
+  port: 80
+
+script:
+  - id: onwithtimeraction
+    mode: restart
+    then:
+      - switch.turn_on: relay
+      - delay: 1min
+      - switch.turn_off: relay
+
+binary_sensor:
+  - platform: gpio
+    pin:
+      number: GPIO14
+      inverted: True
+      mode: INPUT_PULLUP
+    name: arlec_pc189ha_1_button
+    filters:
+      delayed_on_off: 100ms # Debouncing
+    on_press:
+      then:
+        - if:
+            condition:
+              switch.is_off: relay
+            then:
+              - script.execute: onwithtimeraction
+            else:
+              - switch.turn_off: relay
+            
+
+switch:
+  - platform: gpio
+    pin: GPIO12
+    name: "arlec_pc189ha_1"
+    id: relay
+    restore_mode: always off
+    icon: mdi:power-socket-au
+    on_turn_on:
+      then:
+        - output.turn_on: button_led
+    on_turn_off:
+      then:
+        - output.turn_off: button_led
+
+output:
+  - platform: gpio
+    id: button_led
+    pin:
+      number: GPIO4
+      inverted: yes
