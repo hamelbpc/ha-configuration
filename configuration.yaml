@@ -17,6 +17,8 @@ homeassistant:
     sensor.solar_e_today:
       state_class: "total_increasing"
       last_reset: "{{ now().strftime('%Y-%m-%d 00:00:00+11:00') }}"
+  packages:
+    push_to_github: !include push_to_github.yaml
 
 sensor:
 # ZeverSolar Inverter Local Data Sensors
@@ -41,23 +43,7 @@ sensor:
     resource: http://192.168.81.157/home.cgi
     value_template: "{{ value.split()[13].split()[0] }}" 
     
-folder_watcher:
-  - folder: /config
-    patterns:
-      - '*.yaml'
-      - '*.yml'
-      - '*.txt'
-      - '*.md'
-      - '*.cpp'
-      - '*.h'
-      - '*.c'
-      - '*.js'
-      - '*.html'
-      - '*.css'
-      - '*.sh'
-      
-shell_command:
-  push_to_github: "./shellscripts/config_folder_changed.sh"
+
   
   
 
