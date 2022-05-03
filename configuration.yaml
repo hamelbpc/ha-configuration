@@ -43,5 +43,26 @@ sensor:
     
 folder_watcher:
   - folder: /config
+    patterns:
+      - '*.yaml'
+      - '*.yml'
+      - '*.txt'
+      - '*.md'
+      - '*.cpp'
+      - '*.h'
+      - '*.c'
+      - '*.js'
+      - '*.html'
+      - '*.css'
+      
+shell_command:
+  push_to_github: /config/shellscripts/config_folder_changed.sh
   
+
+  
+
+      
+      
+    
+    
   

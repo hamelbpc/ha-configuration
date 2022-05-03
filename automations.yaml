@@ -1,1 +1,25 @@
-[]
+- id: '1651374432871'
+  alias: Notification on change in /config folder
+  description: ''
+  trigger:
+  - platform: event
+    event_type: folder_watcher
+    event_data:
+      event_type: created
+  - platform: event
+    event_type: folder_watcher
+    event_data:
+      event_type: deleted
+  - platform: event
+    event_type: folder_watcher
+    event_data:
+      event_type: modified
+  - platform: event
+    event_type: folder_watcher
+    event_data:
+      event_type: moved
+  condition: []
+  action:
+  - service: shell_command.push_to_github
+    data: {}
+  mode: single
