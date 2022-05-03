@@ -56,7 +56,7 @@ folder_watcher:
       - '*.css'
       
 shell_command:
-  push_to_github: /config/shellscripts/config_folder_changed.sh
+  push_to_github: /usr/share/hassio/homeassistant/shellscripts/config_folder_changed.sh
   
 
   
