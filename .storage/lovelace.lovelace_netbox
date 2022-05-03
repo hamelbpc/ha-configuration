@@ -1,0 +1,28 @@
+{
+    "version": 1,
+    "minor_version": 1,
+    "key": "lovelace.lovelace_netbox",
+    "data": {
+        "config": {
+            "views": [
+                {
+                    "title": "Home",
+                    "cards": [
+                        {
+                            "type": "markdown",
+                            "content": "rack http://192.168.81.162:8505/dcim/racks/\n\ndevice greater than 1ru, need to specify device type\nhttp://192.168.81.162:8505/dcim/device-types/",
+                            "title": "shortcuts"
+                        }
+                    ]
+                },
+                {
+                    "theme": "Backend-selected",
+                    "title": "boo",
+                    "path": "boo",
+                    "badges": [],
+                    "cards": []
+                }
+            ]
+        }
+    }
+}
