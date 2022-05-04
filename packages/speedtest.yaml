@@ -1,12 +1,23 @@
 speedtest:
   sensor:
-  - platform: command_line
-    name: "Ookla Speedtest Data"
-    command: "/config/speedtest -f json --accept-license --accept-gdpr"
-    scan_interval: 3600
-    command_timeout: 45
-    json_attributes:
-      - ping
-      - download
-      - upload
-    value_template: "{{ value_json['result']['url'] }}"
+    - platform: command_line
+      name: "Ookla Speedtest Data"
+      command: "/config/speedtest -f json --accept-license --accept-gdpr"
+      scan_interval: 3600
+      command_timeout: 45
+      json_attributes:
+        - ping
+        - download
+        - upload
+      value_template: "{{ value_json['result']['url'] }}"
+
+  template:
+    - sensor:
+        name: Download Speed
+        icon: mdi:gauge
+        unit_of_measurement: Mbps
+        state_class: measurement
+        state: >-
+          {% set download = states['sensor.ookla_speedtest_data'].attributes['download']['bandwidth'] %}
+          {% set download_speed = download * 8 / 1E6 | float  | round(1)  %}
+          {{ "%.2f" | format(download_speed)  }}
