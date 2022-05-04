@@ -23,3 +23,15 @@
   - service: shell_command.push_to_github
     data: {}
   mode: single
+- id: '1651622520272'
+  alias: Lovelace dashboard changed
+  description: ''
+  trigger:
+  - platform: event
+    event_type: lovelace_updated
+  condition: []
+  action:
+  - service: persistent_notification.create
+    data:
+      message: lovelace changed
+  mode: single
