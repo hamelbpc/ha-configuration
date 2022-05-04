@@ -1,0 +1,12 @@
+speedtest:
+  sensor:
+  - platform: command_line
+    name: "Ookla Speedtest Data"
+    command: "/config/apps/speedtest -f json --accept-license --accept-gdpr"
+    scan_interval: 3600
+    command_timeout: 40
+    value_template: >-
+        {% set ping = value_json.ping.latency|string %}
+        {% set dn = value_json.download.bandwidth|string %}
+        {% set up = value_json.upload.bandwidth|string %}
+        {{ ping + "," + dn + "," + up }}
