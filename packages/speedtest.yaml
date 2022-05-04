@@ -21,3 +21,15 @@ speedtest:
           {% set download = states['sensor.ookla_speedtest_data'].attributes['download']['bandwidth'] %}
           {% set download_speed = download * 8 / 1E6 | float  | round(2)  %}
           {{ "%.2f" | format(download_speed)  }}
+    - sensor:
+        name: Upload Speed
+        icon: mdi:gauge
+        unit_of_measurement: Mbps
+        state_class: measurement
+        state: >-
+          {% set download = states['sensor.ookla_speedtest_data'].attributes['upload']['bandwidth'] %}
+          {% set download_speed = download * 8 / 1E6 | float  | round(2)  %}
+          {{ "%.2f" | format(download_speed)  }}
+          
+          
+          
