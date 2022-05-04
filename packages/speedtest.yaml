@@ -5,8 +5,8 @@ speedtest:
     command: "/config/speedtest -f json --accept-license --accept-gdpr"
     scan_interval: 3600
     command_timeout: 45
-    value_template: >-
-        {% set ping = value_json.ping.latency|string %}
-        {% set dn = value_json.download.bandwidth|string %}
-        {% set up = value_json.upload.bandwidth|string %}
-        {{ ping + "," + dn + "," + up }}
+    json_attributes:
+      - ping
+      - download
+      - upload
+    value_template: "{{ value_json['result']['url'] }}"
