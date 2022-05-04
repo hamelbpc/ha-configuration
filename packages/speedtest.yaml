@@ -19,7 +19,7 @@ speedtest:
         state_class: measurement
         state: >-
           {% set download = states['sensor.ookla_speedtest_data'].attributes['download']['bandwidth'] %}
-          {% set download_speed = download * 8 / 1E6 | float  | round(2)  %}
+          {% set download_speed = download * 8 / 1E6 | float  | round(2, 'floor')  %}
           {{ "%.2f" | format(download_speed)  }}
     - sensor:
         name: Upload Speed
@@ -28,7 +28,7 @@ speedtest:
         state_class: measurement
         state: >-
           {% set download = states['sensor.ookla_speedtest_data'].attributes['upload']['bandwidth'] %}
-          {% set download_speed = download * 8 / 1E6 | float  | round(2)  %}
+          {% set download_speed = download * 8 / 1E6 | float  | round(2, 'floor')  %}
           {{ "%.2f" | format(download_speed)  }}
           
           
