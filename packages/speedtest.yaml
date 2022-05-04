@@ -28,7 +28,7 @@ speedtest:
         state_class: measurement
         state: >-
           {% set upload = states['sensor.ookla_speedtest_data'].attributes['upload']['bandwidth'] %}
-          {% set upload_speed = download * 8 / 1E6 | float  | round(2, 'floor')  %}
+          {% set upload_speed = upload * 8 / 1E6 | float  | round(2, 'floor')  %}
           {{ "%.2f" | format(upload_speed)  }}
     - sensor:
         name: Ping Latency
