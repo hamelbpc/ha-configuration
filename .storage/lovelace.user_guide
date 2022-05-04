@@ -81,18 +81,7 @@
                     "title": "configuration.yaml",
                     "path": "configurationyaml",
                     "badges": [],
-                    "cards": [
-                        {
-                            "type": "vertical-stack",
-                            "cards": [
-                                {
-                                    "type": "markdown",
-                                    "content": "Great video from drzzs explaining key concepts\n\nhttps://www.youtube.com/watch?v=FfjSA2o_0KA\n\n\n\n\n\n\n\n\n\n\n\n",
-                                    "title": "splitting configuration"
-                                }
-                            ]
-                        }
-                    ]
+                    "cards": []
                 }
             ],
             "title": "User Guide"

@@ -31,7 +31,6 @@
     event_type: lovelace_updated
   condition: []
   action:
-  - service: persistent_notification.create
-    data:
-      message: lovelace changed
+  - service: shell_command.push_to_github
+    data: {}
   mode: single
