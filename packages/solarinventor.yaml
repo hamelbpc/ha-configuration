@@ -1,4 +1,8 @@
 solarinverter:
+  homeassistant:
+    customize:
+      sensor.solar_e_today:
+        state_class: "total_increasing"
   sensor:
     # ZeverSolar Inverter Local Data Sensors
     - platform: rest
