@@ -19,6 +19,5 @@ homeassistant:
       last_reset: "{{ now().strftime('%Y-%m-%d 00:00:00+11:00') }}"
   packages: !include_dir_merge_named packages/
 
-sensor: !include_dir_merge_list sensors/
+#sensor: !include_dir_merge_list sensors/
 
-  
