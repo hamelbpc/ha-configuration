@@ -13,10 +13,6 @@ scene: !include scenes.yaml
 homeassistant:
   allowlist_external_dirs:
     - "/config"
-  customize:
-    sensor.solar_e_today:
-      state_class: "total_increasing"
-      last_reset: "{{ now().strftime('%Y-%m-%d 00:00:00+11:00') }}"
   packages: !include_dir_merge_named packages/
 
 #sensor: !include_dir_merge_list sensors/
