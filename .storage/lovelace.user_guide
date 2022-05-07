@@ -69,7 +69,7 @@
                             "cards": [
                                 {
                                     "type": "markdown",
-                                    "content": "Find details in /etc/docker/compose directory\n\nList so far\n- portainer\n- netbox\n",
+                                    "content": "Find details in /etc/docker/compose directory\n\nYou can find details in portainer\n\nhttp://localhost:9000\n",
                                     "title": "Docker containers"
                                 }
                             ]
