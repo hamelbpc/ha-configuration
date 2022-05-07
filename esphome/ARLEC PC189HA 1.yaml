@@ -6,8 +6,8 @@ esphome:
   board: esp01_1m
 
 wifi:
-  ssid: "Mxxxxx-NUE"
-  password: "xxxxxxx38"
+  ssid: "MelbPC-NUE"
+  password: "peachspeak38"
 
   # Enable fallback hotspot (captive portal) in case wifi connection fails
   ap:
