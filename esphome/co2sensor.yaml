@@ -45,6 +45,6 @@ sensor:
     temperature:
       name: "MH-Z19 Temperature"
     update_interval: 60s
-    automatic_baseline_calibration: false
+    automatic_baseline_calibration: true
     
     
