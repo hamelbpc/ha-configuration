@@ -9,15 +9,19 @@ logger:
 
 # Enable Home Assistant API
 api:
-  encryption:
-    key: "nWow3LN9g6M4ArhwoAabANpZihb8l/vDeU9pgf4o/aU="
+  #encryption:
+  #  key: "nWow3LN9g6M4ArhwoAabANpZihb8l/vDeU9pgf4o/aU="
+  services:
+    - service: mhz19_calibrate_zero
+      then:
+        - mhz19.calibrate_zero: myMHZ19B    
 
 ota:
-  password: "f1763d435609873b1828962fae2d37a3"
+# password: "f1763d435609873b1828962fae2d37a3"
 
 wifi:
-  ssid: !secret wifi_ssid
-  password: !secret wifi_password
+  ssid: MelbPC-NUE
+  password: peachspeak38
 
   # Enable fallback hotspot (captive portal) in case wifi connection fails
   ap:
@@ -25,4 +29,21 @@ wifi:
     password: "Mo37TuLyCHE6"
 
 captive_portal:
+
+
+uart:
+  rx_pin: GPIO3
+  tx_pin: GPIO1
+  baud_rate: 9600
+
+sensor:
+  - platform: mhz19
+    id: myMHZ19B
+    co2:
+      name: "MH-Z19 CO2 Value"
+    temperature:
+      name: "MH-Z19 Temperature"
+    update_interval: 60s
+    automatic_baseline_calibration: false
+    
     
