@@ -27,7 +27,7 @@ solarinverter:
       value_template: "{{ value.split()[13].split()[0] }}" 
 
 
-intent:
+
 
 
       
