@@ -25,6 +25,11 @@ solarinverter:
       name: Solar Status #OK When No Error
       resource: http://192.168.81.157/home.cgi
       value_template: "{{ value.split()[13].split()[0] }}" 
+
+
+intent:
+
+
       
       
  
