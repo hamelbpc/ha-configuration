@@ -1,0 +1,12 @@
+[22-06-28 16:29:10.7115] main::init (390) Starting Logitech Media Server (v8.2.0, 1627922070, Tue Aug  3 11:37:35 CEST 2021) perl 5.028001 - x86_64-linux-gnu-thread-multi
+[22-06-28 16:29:11.7322] Slim::Utils::SQLiteHelper::postConnect (377) Optimizing DB because of missing or empty sqlite_stat1 table
+[22-06-28 16:29:11.7976] Slim::Schema::forceCommit (2177) Warning: Trying to commit transactions before DB is initialized!
+[22-06-28 16:29:12.1677] Slim::Plugin::CLI::Plugin::cli_socket_open (163) Can't setup the listening port 9090: Address already in use
+[22-06-28 16:29:12.1680] Slim::Utils::PluginManager::load (393) Warning: Couldn't call Slim::Plugin::CLI::Plugin->initPlugin: Can't setup the listening port 9090: Address already in use at /usr/share/squeezeboxserver/lib/Log/Log4perl/Logger.pm line 900
+[22-06-28 16:29:12.2662] Slim::Utils::SQLiteHelper::postConnect (377) Optimizing DB because of missing or empty sqlite_stat1 table
+[22-06-28 16:29:12.3486] Slim::Schema::forceCommit (2177) Warning: Trying to commit transactions before DB is initialized!
+[22-06-28 16:29:12.4929] main::checkDataSource (1121) Warning: Schema updated or no media found in the database, initiating scan.
+[22-06-28 16:29:12.5146] Slim::Web::HTTP::openport (179) Can't setup the listening port 9000 for the HTTP server: Illegal seek
+[22-06-28 16:29:12.5151] Slim::Web::HTTP::openport (196) Previously configured port 9000 was busy - we're now using port 9001 instead
+[22-06-28 16:29:30.3833] Slim::Utils::SQLiteHelper::postConnect (377) Optimizing DB because of missing or empty sqlite_stat1 table
+[22-06-28 16:29:30.4711] Slim::Schema::forceCommit (2177) Warning: Trying to commit transactions before DB is initialized!

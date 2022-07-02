@@ -1,0 +1,36 @@
+[22-06-28 16:29:27.9034] main::main (206) Starting Logitech Media Server scanner (v8.2.0, 1627922070, Tue Aug  3 11:37:35 CEST 2021) perl 5.028001
+[22-06-28 16:29:27.9727] Slim::Schema::forceCommit (2177) Warning: Trying to commit transactions before DB is initialized!
+[22-06-28 16:29:29.0387] Slim::Music::Import::runImporter (578) Starting Slim::Media::MediaFolderScan scan
+[22-06-28 16:29:29.0391] Slim::Utils::Scanner::Local::rescan (179) Discovering audio files in /media
+[22-06-28 16:29:29.0504] Slim::Utils::Scanner::Local::__ANON__ (191) Start processing found tracks
+[22-06-28 16:29:29.0507] Slim::Utils::Scanner::Local::__ANON__ (199) Connect do DB
+[22-06-28 16:29:29.0509] Slim::Utils::Scanner::Local::__ANON__ (202) Get latest ID
+[22-06-28 16:29:29.0513] Slim::Utils::Scanner::Local::__ANON__ (224) Delete temporary table if exists
+[22-06-28 16:29:29.0516] Slim::Utils::Scanner::Local::__ANON__ (227) Re-build temporary table
+[22-06-28 16:29:29.0522] Slim::Utils::Scanner::Local::__ANON__ (276) Get deleted tracks count
+[22-06-28 16:29:29.0525] Slim::Utils::Scanner::Local::__ANON__ (283) Get new tracks count
+[22-06-28 16:29:29.0529] Slim::Utils::Scanner::Local::__ANON__ (288) Get changed tracks count
+[22-06-28 16:29:29.0532] Slim::Utils::Scanner::Local::deleteTracks (519) Removing deleted audio files (0)
+[22-06-28 16:29:29.0534] Slim::Utils::Scanner::Local::__ANON__ (301) Scanning new audio files (0)
+[22-06-28 16:29:29.0536] Slim::Utils::Scanner::Local::__ANON__ (381) Rescanning changed audio files (0)
+[22-06-28 16:29:29.0539] Slim::Music::Import::endImporter (711) Completed Slim::Media::MediaFolderScan Scan in 0.015 seconds.
+[22-06-28 16:29:29.0546] Slim::Music::Import::runImporter (578) Starting Slim::Plugin::WiMP::Importer scan
+[22-06-28 16:29:30.0148] Slim::Music::Import::endImporter (711) Completed Slim::Plugin::WiMP::Importer Scan in 0.960 seconds.
+[22-06-28 16:29:30.0159] Slim::Music::Import::runImporter (578) Starting Slim::Plugin::ExtendedBrowseModes::Libraries scan
+[22-06-28 16:29:30.0163] Slim::Music::Import::endImporter (711) Completed Slim::Plugin::ExtendedBrowseModes::Libraries Scan in 0.000 seconds.
+[22-06-28 16:29:30.0170] Slim::Music::Import::runImporter (578) Starting Slim::Plugin::FullTextSearch::Plugin scan
+[22-06-28 16:29:30.0180] Slim::Plugin::FullTextSearch::Plugin::_rebuildIndex (458) Starting fulltext index build
+[22-06-28 16:29:30.0182] Slim::Plugin::FullTextSearch::Plugin::_rebuildIndex (462) Initialize fulltext table
+[22-06-28 16:29:30.0198] Slim::Plugin::FullTextSearch::Plugin::_rebuildIndex (475) Create fulltext index for tracks
+[22-06-28 16:29:30.0284] Slim::Plugin::FullTextSearch::Plugin::_rebuildIndex (485) Create fulltext index for albums
+[22-06-28 16:29:30.0300] Slim::Plugin::FullTextSearch::Plugin::_rebuildIndex (494) Create fulltext index for contributors
+[22-06-28 16:29:30.0310] Slim::Plugin::FullTextSearch::Plugin::_rebuildIndex (504) Create fulltext index for playlists
+[22-06-28 16:29:30.0351] Slim::Plugin::FullTextSearch::Plugin::_rebuildIndex (519) Optimize fulltext index
+[22-06-28 16:29:30.0451] Slim::Plugin::FullTextSearch::Plugin::_rebuildIndex (534) Fulltext index build done!
+[22-06-28 16:29:30.0457] Slim::Music::Import::endImporter (711) Completed Slim::Plugin::FullTextSearch::Plugin Scan in 0.029 seconds.
+[22-06-28 16:29:30.0462] Slim::Music::Import::runImporter (578) Starting Slim::Plugin::OnlineLibrary::Importer::VirtualLibrariesCleanup scan
+[22-06-28 16:29:30.0473] Slim::Music::Import::endImporter (711) Completed Slim::Plugin::OnlineLibrary::Importer::VirtualLibrariesCleanup Scan in 0.001 seconds.
+[22-06-28 16:29:30.0488] Slim::Music::Artwork::precacheAllArtwork (657) Starting precacheArtwork for 0 albums
+[22-06-28 16:29:30.0492] Slim::Music::Import::endImporter (711) Completed precacheArtwork Scan in 0.001 seconds.
+[22-06-28 16:29:30.0502] Slim::Music::Import::runScanPostProcessing (480) Starting Database optimization.
+[22-06-28 16:29:30.3024] Slim::Music::Import::endImporter (711) Completed dbOptimize Scan in 0.252 seconds.
