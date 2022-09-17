@@ -1,0 +1,14 @@
+{
+  "version": 1,
+  "minor_version": 1,
+  "key": "lovelace_resources",
+  "data": {
+    "items": [
+      {
+        "url": "/hacsfiles/bom-radar-card/bom-radar-card.js?hacstag=294609880206",
+        "type": "module",
+        "id": "a40b1ad45787490a949d8ec773622601"
+      }
+    ]
+  }
+}
