@@ -98,7 +98,8 @@
           "cards": [
             {
               "type": "custom:bom-radar-card",
-              "frame_count": 10,
+              "frame_count": 40,
+              "frame_delay": 200,
               "center_latitude": -37.94502905064487,
               "center_longitude": 145.07779865582407,
               "marker_latitude": -37.94502905064487,
