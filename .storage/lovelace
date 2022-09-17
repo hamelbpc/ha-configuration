@@ -5,6 +5,7 @@
   "data": {
     "config": {
       "title": "Melbpc",
+      "panel": true,
       "views": [
         {
           "path": "default_view",
