@@ -89,6 +89,13 @@
               "title": "select"
             }
           ]
+        },
+        {
+          "theme": "Backend-selected",
+          "title": "Weather",
+          "path": "weather",
+          "badges": [],
+          "cards": []
         }
       ]
     }
