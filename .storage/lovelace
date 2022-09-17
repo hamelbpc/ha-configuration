@@ -95,7 +95,22 @@
           "title": "Weather",
           "path": "weather",
           "badges": [],
-          "cards": []
+          "cards": [
+            {
+              "type": "custom:bom-radar-card",
+              "frame_count": 10,
+              "center_latitude": -25.567607,
+              "center_longitude": 152.930597,
+              "marker_latitude": -26.175328,
+              "marker_longitude": 152.653189,
+              "show_marker": true,
+              "show_range": true,
+              "show_zoom": true,
+              "show_recenter": true,
+              "show_playback": true,
+              "zoom_level": 8
+            }
+          ]
         }
       ]
     }
