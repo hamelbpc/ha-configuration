@@ -100,8 +100,8 @@
             {
               "type": "custom:bom-radar-card",
               "map_style": "satellite",
-              "frame_count": 40,
-              "frame_delay": 200,
+              "frame_count": 10,
+              "frame_delay": 800,
               "center_latitude": -37.94502905064487,
               "center_longitude": 145.07779865582407,
               "marker_latitude": -37.94502905064487,
@@ -111,7 +111,7 @@
               "show_zoom": true,
               "show_recenter": true,
               "show_playback": true,
-              "zoom_level": 9
+              "zoom_level": 7
             }
           ]
         }
