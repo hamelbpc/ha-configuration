@@ -1,0 +1,30 @@
+esphome:
+  name: ttgo-t-display
+
+esp32:
+  board: featheresp32
+  framework:
+    type: arduino
+
+# Enable logging
+logger:
+
+# Enable Home Assistant API
+api:
+  encryption:
+    key: "aRG8I1Kn70Q9xp7RTZzWynmQhdF0OBKkCf0Zsc5ued4="
+
+ota:
+  password: "f050e0c276eb70ba45b4a7be6b85a59e"
+
+wifi:
+  ssid: !secret wifi_ssid
+  password: !secret wifi_password
+
+  # Enable fallback hotspot (captive portal) in case wifi connection fails
+  ap:
+    ssid: "Ttgo-T-Display Fallback Hotspot"
+    password: "r6v7rtYyi7Rr"
+
+captive_portal:
+    
