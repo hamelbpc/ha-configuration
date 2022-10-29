@@ -19,12 +19,12 @@ esphome:
   platformio_options:
     build_flags: -std=gnu++17
     build_unflags: -std=gnu++11
-    platform: https://github.com/Jason2866/platform-espressif32.git
-    #platform: https://github.com/platformio/platform-espressif32.git#feature/arduino-upstream
+    #platform: https://github.com/Jason2866/platform-espressif32.git
+    platform: https://github.com/platformio/platform-espressif32.git
     #platform_packages:
       #- toolchain-xtensa32@~3.80200.200512
       #- toolchain-xtensa32@2.50200.97
-      #- framework-arduinoespressif32 @ https://github.com/espressif/arduino-esp32.git#idf-release/v4.4
+      - framework-arduinoespressif32 @ https://github.com/espressif/arduino-esp32.git
 
 
 substitutions:
