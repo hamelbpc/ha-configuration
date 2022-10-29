@@ -17,10 +17,10 @@ esphome:
   libraries:
     - ArduinoJson
   platformio_options:
-    build_flags: -std=gnu++14
+    build_flags: -std=c++17
     build_unflags: -std=gnu++11
     #platform: https://github.com/Jason2866/platform-espressif32.git#esphome
-    #platform: https://github.com/platformio/platform-espressif32.git#feature/arduino-upstream
+    platform: https://github.com/platformio/platform-espressif32.git#feature/arduino-upstream
     #platform_packages:
       #- toolchain-xtensa32@~3.80200.200512
       #- toolchain-xtensa32@2.50200.97
