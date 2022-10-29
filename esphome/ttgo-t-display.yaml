@@ -258,7 +258,7 @@ display:
       }
       //drawMenu();
       //drawCustomRootMenu();
-      drawTastyMenu();
+      //drawTastyMenu();
       ESP_LOGD("std", "%ld", __cplusplus);
       
       
