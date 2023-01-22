@@ -1,0 +1,14 @@
+{
+  "version": 1,
+  "minor_version": 1,
+  "key": "lovelace.smart_doll_house",
+  "data": {
+    "config": {
+      "views": [
+        {
+          "title": "Home"
+        }
+      ]
+    }
+  }
+}
