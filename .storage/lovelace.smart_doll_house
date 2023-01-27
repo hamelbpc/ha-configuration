@@ -21,7 +21,7 @@
                       "type": "custom:floorplan-card",
                       "full_height": true,
                       "config": {
-                        "image": "/local/floorplan/dollhouse/floorplanner_home.svg",
+                        "image": "/local/floorplan/dollhouse/dollhousehafloorplan.svg",
                         "stylesheet": "/local/floorplan/dollhouse/dollhouse.css",
                         "log_level": "info",
                         "console_log_level": "info",
@@ -31,7 +31,7 @@
                         "rules": [
                           {
                             "name": "Test",
-                            "element": "area.udestue",
+                            "element": "room1",
                             "entity": "person.ha",
                             "tap_action": {
                               "action": "navigate",
