@@ -23,7 +23,9 @@
                           "type": "custom:floorplan-card",
                           "full_height": true,
                           "image": "/local/floorplan/dollhouse/dollhousefloorplan.svg",
-                          "stylesheet": "/local/floorplan/dollhouse/dollhouse.css"
+                          "stylesheet": "/local/floorplan/dollhouse/dollhouse.css",
+                          "log_level": "info",
+                          "console_log_level": "info"
                         }
                       ]
                     }
