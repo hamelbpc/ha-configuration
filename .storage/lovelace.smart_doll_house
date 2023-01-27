@@ -24,7 +24,10 @@
                         "image": "/local/floorplan/dollhouse/dollhousehafloorplan.svg",
                         "stylesheet": "/local/floorplan/dollhouse/dollhouse.css",
                         "log_level": "info",
-                        "console_log_level": "info"
+                        "console_log_level": "info",
+                        "default": {
+                          "tap_action": "more-info"
+                        }
                       }
                     }
                   ]
