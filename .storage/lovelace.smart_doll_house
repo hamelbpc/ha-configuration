@@ -30,12 +30,48 @@
                         },
                         "rules": [
                           {
-                            "name": "Test",
+                            "name": "Room1",
                             "element": "room1",
                             "entity": "person.ha",
                             "tap_action": {
                               "action": "navigate",
                               "navigation_path": "/smart-doll-house/room1"
+                            }
+                          },
+                          {
+                            "name": "Room2",
+                            "element": "room2",
+                            "entity": "person.ha",
+                            "tap_action": {
+                              "action": "navigate",
+                              "navigation_path": "/smart-doll-house/room2"
+                            }
+                          },
+                          {
+                            "name": "Room3",
+                            "element": "room3",
+                            "entity": "person.ha",
+                            "tap_action": {
+                              "action": "navigate",
+                              "navigation_path": "/smart-doll-house/room3"
+                            }
+                          },
+                          {
+                            "name": "Room4",
+                            "element": "room4",
+                            "entity": "person.ha",
+                            "tap_action": {
+                              "action": "navigate",
+                              "navigation_path": "/smart-doll-house/room4"
+                            }
+                          },
+                          {
+                            "name": "Room5",
+                            "element": "room5",
+                            "entity": "person.ha",
+                            "tap_action": {
+                              "action": "navigate",
+                              "navigation_path": "/smart-doll-house/room5"
                             }
                           }
                         ]
