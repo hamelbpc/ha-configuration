@@ -21,7 +21,7 @@
                       "type": "custom:floorplan-card",
                       "full_height": true,
                       "config": {
-                        "image": "/local/floorplan/dollhouse/dollhousehafloorplan.svg",
+                        "image": "/local/floorplan/dollhouse/floorplanner_home.svg",
                         "stylesheet": "/local/floorplan/dollhouse/dollhouse.css",
                         "log_level": "info",
                         "console_log_level": "info",
