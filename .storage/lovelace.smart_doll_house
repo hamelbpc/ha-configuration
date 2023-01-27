@@ -9,6 +9,13 @@
           "theme": "Backend-selected",
           "title": "Doll House",
           "badges": []
+        },
+        {
+          "theme": "Backend-selected",
+          "title": "Room1",
+          "path": "room1",
+          "badges": [],
+          "cards": []
         }
       ]
     }
