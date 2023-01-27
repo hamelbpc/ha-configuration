@@ -32,7 +32,7 @@
                           {
                             "name": "Test",
                             "element": "area.udestue",
-                            "entity": "person.mohan",
+                            "entity": "person.ha",
                             "tap_action": {
                               "action": "navigate",
                               "navigation_path": "/"
