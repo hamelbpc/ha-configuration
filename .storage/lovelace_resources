@@ -8,6 +8,11 @@
         "url": "/hacsfiles/bom-radar-card/bom-radar-card.js?hacstag=294609880210",
         "type": "module",
         "id": "a40b1ad45787490a949d8ec773622601"
+      },
+      {
+        "url": "/hacsfiles/ha-floorplan/floorplan.js?hacstag=1883234941035",
+        "type": "module",
+        "id": "b0d83ed683b74a98a9be9c53f3ca5618"
       }
     ]
   }

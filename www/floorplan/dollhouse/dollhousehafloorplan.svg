@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="210mm"
+   height="297mm"
+   viewBox="0 0 210 297"
+   version="1.1"
+   id="svg5"
+   inkscape:version="1.1 (c68e22c387, 2021-05-23)"
+   sodipodi:docname="dollhousehafloorplan.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview7"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:document-units="mm"
+     showgrid="false"
+     inkscape:zoom="0.92292368"
+     inkscape:cx="490.83148"
+     inkscape:cy="121.89524"
+     inkscape:window-width="1366"
+     inkscape:window-height="745"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer2" />
+  <defs
+     id="defs2" />
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <image
+       width="208.84444"
+       height="278.27109"
+       preserveAspectRatio="none"
+       xlink:href="dollhousebackground.png"
+       id="image17"
+       x="0"
+       y="-54.2784" />
+    <g
+       inkscape:groupmode="layer"
+       id="layer2"
+       inkscape:label="rectangles"
+       style="opacity:0">
+      <rect
+         style="fill:#ff0000;stroke:#807f7f;stroke-width:0.264583"
+         id="room4"
+         width="73.389961"
+         height="67.656372"
+         x="48.162159"
+         y="132.44594"
+         inkscape:label="room4" />
+      <rect
+         style="fill:#008000;stroke:#807f7f;stroke-width:0.264583"
+         id="rect557"
+         width="75.110039"
+         height="68.229736"
+         x="121.55212"
+         y="132.44594"
+         inkscape:label="room5" />
+      <rect
+         style="fill:#ffff00;stroke:#807f7f;stroke-width:0.264583"
+         id="room2"
+         width="90.017372"
+         height="71.956566"
+         x="46.155407"
+         y="57.622585"
+         inkscape:label="room2" />
+      <rect
+         style="fill:#800000;stroke:#807f7f;stroke-width:0.264583"
+         id="room3"
+         width="62.209465"
+         height="71.383202"
+         x="136.17278"
+         y="58.195946"
+         inkscape:label="room3" />
+      <rect
+         style="fill:#800080;stroke:#807f7f;stroke-width:0.264583"
+         id="room1"
+         width="115.81853"
+         height="56.762547"
+         x="48.162159"
+         y="-2.0067568"
+         inkscape:label="room1" />
+    </g>
+  </g>
+</svg>
