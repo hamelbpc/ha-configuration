@@ -6,7 +6,9 @@
     "config": {
       "views": [
         {
-          "title": "Home"
+          "theme": "Backend-selected",
+          "title": "Doll House",
+          "badges": []
         }
       ]
     }
