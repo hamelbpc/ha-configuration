@@ -15,7 +15,19 @@
               "cards": [
                 {
                   "type": "horizontal-stack",
-                  "cards": []
+                  "cards": [
+                    {
+                      "type": "horizontal-stack",
+                      "cards": [
+                        {
+                          "type": "custom:floorplan-card",
+                          "full_height": true,
+                          "image": "/local/floorplan/dollhouse/dollhousefloorplan.svg",
+                          "stylesheet": "/local/floorplan/dollhouse/dollhouse.css"
+                        }
+                      ]
+                    }
+                  ]
                 }
               ]
             }
