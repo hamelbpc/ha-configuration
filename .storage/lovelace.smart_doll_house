@@ -23,6 +23,13 @@
           "path": "room2",
           "badges": [],
           "cards": []
+        },
+        {
+          "theme": "Backend-selected",
+          "title": "Room3",
+          "path": "room3",
+          "badges": [],
+          "cards": []
         }
       ]
     }
