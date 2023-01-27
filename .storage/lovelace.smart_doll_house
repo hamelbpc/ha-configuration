@@ -27,7 +27,18 @@
                         "console_log_level": "info",
                         "default": {
                           "tap_action": "more-info"
-                        }
+                        },
+                        "rules": [
+                          {
+                            "name": "Test",
+                            "element": "area.udestue",
+                            "entity": "person.mohan",
+                            "tap_action": {
+                              "action": "navigate",
+                              "navigation_path": "/"
+                            }
+                          }
+                        ]
                       }
                     }
                   ]
