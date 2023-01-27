@@ -8,7 +8,18 @@
         {
           "theme": "Backend-selected",
           "title": "Doll House",
-          "badges": []
+          "badges": [],
+          "cards": [
+            {
+              "type": "vertical-stack",
+              "cards": [
+                {
+                  "type": "horizontal-stack",
+                  "cards": []
+                }
+              ]
+            }
+          ]
         },
         {
           "theme": "Backend-selected",
