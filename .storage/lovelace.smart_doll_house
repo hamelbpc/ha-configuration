@@ -8,6 +8,7 @@
         {
           "theme": "Backend-selected",
           "title": "Doll House",
+          "panel": true,
           "badges": [],
           "cards": [
             {
