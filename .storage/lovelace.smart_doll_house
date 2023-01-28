@@ -130,7 +130,8 @@
                 {
                   "entity": "switch.switchstate"
                 }
-              ]
+              ],
+              "title": "PC191HA Smart Plug"
             }
           ]
         }
