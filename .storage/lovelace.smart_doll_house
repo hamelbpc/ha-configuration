@@ -117,6 +117,13 @@
           "path": "room5",
           "badges": [],
           "cards": []
+        },
+        {
+          "theme": "Backend-selected",
+          "title": "devices",
+          "path": "s",
+          "badges": [],
+          "cards": []
         }
       ]
     }
