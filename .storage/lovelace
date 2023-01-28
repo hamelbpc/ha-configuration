@@ -88,6 +88,13 @@
                 "select.wled_preset"
               ],
               "title": "select"
+            },
+            {
+              "type": "entities",
+              "entities": [
+                "switch.switchstate"
+              ],
+              "title": "PC191HA Smart Plug"
             }
           ]
         },
