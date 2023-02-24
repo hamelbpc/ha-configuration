@@ -123,17 +123,7 @@
           "title": "devices",
           "path": "s",
           "badges": [],
-          "cards": [
-            {
-              "type": "entities",
-              "entities": [
-                {
-                  "entity": "switch.switchstate"
-                }
-              ],
-              "title": "PC191HA Smart Plug"
-            }
-          ]
+          "cards": []
         }
       ]
     }
