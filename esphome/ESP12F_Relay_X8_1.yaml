@@ -1,0 +1,62 @@
+esphome:
+  name: dollhouserelayboard
+  platform: ESP8266
+  board: esp12e
+
+wifi:
+  ssid: "MelbPC-NUE"
+  password: "peachspeak38"
+
+  # Enable fallback hotspot (captive portal) in case wifi connection fails
+  ap:
+    ssid: "DollhouseRelayBoard"
+
+logger:
+   
+web_server:
+
+api:
+
+ota:
+
+
+
+# Four relay outputs, exposed as switches in Home Assistant
+switch:
+  - platform: gpio
+    pin: GPIO16
+    name: Relay1
+    id: relay1
+  - platform: gpio
+    pin: GPIO14
+    name: Relay2
+    id: relay2
+  - platform: gpio
+    pin: GPIO12
+    name: Relay3
+    id: relay3
+  - platform: gpio
+    pin: GPIO13
+    name: Relay4
+    id: relay4
+  - platform: gpio
+    pin: GPIO15
+    name: Relay5
+    id: relay5
+  - platform: gpio
+    pin: GPIO00
+    name: Relay6
+    id: relay6
+  - platform: gpio
+    pin: GPIO04
+    name: Relay7
+    id: relay7
+  - platform: gpio
+    pin: GPIO05
+    name: Relay8
+    id: relay8
+    
+
+
+
+
