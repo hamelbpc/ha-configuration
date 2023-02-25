@@ -172,7 +172,8 @@
                     {
                       "entity": "sensor.smartplug1_power"
                     }
-                  ]
+                  ],
+                  "title": "PC191HA"
                 }
               ]
             }
