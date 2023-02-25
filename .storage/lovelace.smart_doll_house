@@ -123,7 +123,12 @@
           "title": "devices",
           "path": "s",
           "badges": [],
-          "cards": []
+          "cards": [
+            {
+              "type": "vertical-stack",
+              "cards": []
+            }
+          ]
         }
       ]
     }
