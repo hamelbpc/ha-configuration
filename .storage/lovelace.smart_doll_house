@@ -126,7 +126,38 @@
           "cards": [
             {
               "type": "vertical-stack",
-              "cards": []
+              "cards": [
+                {
+                  "type": "entities",
+                  "entities": [
+                    {
+                      "entity": "switch.relay1"
+                    },
+                    {
+                      "entity": "switch.relay2"
+                    },
+                    {
+                      "entity": "switch.relay3"
+                    },
+                    {
+                      "entity": "switch.relay4"
+                    },
+                    {
+                      "entity": "switch.relay5"
+                    },
+                    {
+                      "entity": "switch.relay6"
+                    },
+                    {
+                      "entity": "switch.relay7"
+                    },
+                    {
+                      "entity": "switch.relay8"
+                    }
+                  ],
+                  "title": "8 Relay Board"
+                }
+              ]
             }
           ]
         }
