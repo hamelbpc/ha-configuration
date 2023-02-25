@@ -156,6 +156,23 @@
                     }
                   ],
                   "title": "8 Relay Board"
+                },
+                {
+                  "type": "entities",
+                  "entities": [
+                    {
+                      "entity": "switch.smartplug1_switch"
+                    },
+                    {
+                      "entity": "sensor.smartplug1_voltage"
+                    },
+                    {
+                      "entity": "sensor.smartplug1_current"
+                    },
+                    {
+                      "entity": "sensor.smartplug1_power"
+                    }
+                  ]
                 }
               ]
             }
