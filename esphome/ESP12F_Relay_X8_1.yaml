@@ -2,6 +2,21 @@ esphome:
   name: dollhouserelayboard
   platform: ESP8266
   board: esp12e
+  on_boot:
+    priority: 200.0
+    then:
+      - delay: 1s
+      - switch.turn_on: relay2
+      - delay: 5s
+      - switch.turn_on: relay3
+      - delay: 5s
+      - switch.turn_on: relay4
+      - delay: 5s            
+      - switch.turn_on: relay5
+      - delay: 5s
+      - switch.turn_on: relay6
+      - delay: 5s
+
 
 wifi:
   ssid: "MelbPC-NUE"
