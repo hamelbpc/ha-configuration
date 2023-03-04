@@ -133,20 +133,48 @@
               "type": "custom:apexcharts-card",
               "header": {
                 "show": true,
-                "title": "ApexCharts-Card",
+                "title": "Sun and solar",
                 "show_states": true,
                 "colorize_states": true
               },
               "series": [
                 {
-                  "entity": "sensor.solar_pac",
-                  "data_generator": ""
+                  "entity": "sensor.solar_pac"
                 },
                 {
                   "entity": "sensor.mh_z19_temperature",
-                  "data_generator": ""
+                  "color": "rgb(75, 204, 82)"
                 }
-              ]
+              ],
+              "graph_span": "12h",
+              "apex_config": {
+                "stroke": {
+                  "width": 1.5
+                },
+                "yaxis": [
+                  {
+                    "title": {
+                      "text": "Inverter Pwr"
+                    },
+                    "min": 0,
+                    "max": 6000,
+                    "tickAmount": 5,
+                    "decimalsInFloat": 0
+                  },
+                  {
+                    "title": {
+                      "text": "Room temperature",
+                      "color": "rgb(75, 204, 82)"
+                    },
+                    "opposite": true,
+                    "min": 10,
+                    "max": 40,
+                    "tickAmount": 5,
+                    "decimalsInFloat": 0
+                  }
+                ],
+                "y_axis_precision": 0
+              }
             }
           ]
         }
