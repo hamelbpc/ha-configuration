@@ -7,6 +7,13 @@ esphome:
     then:
       - delay: 1s
       - output.turn_on: gpio_red
+      - delay: 30s
+      - if:
+          condition:
+            wifi.connected
+          then:
+            - output.turn_off: gpio_red
+            - output.turn_on: gpio_yellow
 
 wifi:
   ssid: "MelbPC-NUE"
