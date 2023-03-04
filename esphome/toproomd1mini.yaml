@@ -19,5 +19,14 @@ api:
 
 ota:
 
-
+output:
+  - platform: gpio
+    pin: D5
+    id: gpio_red
+  - platform: gpio
+    pin: D6
+    id: gpio_yellow
+  - platform: gpio
+    pin: D7
+    id: gpio_green
 
