@@ -121,6 +121,14 @@
               "zoom_level": 7
             }
           ]
+        },
+        {
+          "theme": "Backend-selected",
+          "title": "Charts",
+          "path": "charts",
+          "icon": "mdi:chart-bell-curve-cumulative",
+          "badges": [],
+          "cards": []
         }
       ]
     }
