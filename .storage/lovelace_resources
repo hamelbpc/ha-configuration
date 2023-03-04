@@ -13,6 +13,11 @@
         "url": "/hacsfiles/ha-floorplan/floorplan.js?hacstag=1883234941035",
         "type": "module",
         "id": "b0d83ed683b74a98a9be9c53f3ca5618"
+      },
+      {
+        "url": "/hacsfiles/apexcharts-card/apexcharts-card.js?hacstag=331701152202",
+        "type": "module",
+        "id": "6b4d46f3513d40aabab151a29fb79ab6"
       }
     ]
   }

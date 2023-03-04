@@ -128,7 +128,27 @@
           "path": "charts",
           "icon": "mdi:chart-bell-curve-cumulative",
           "badges": [],
-          "cards": []
+          "cards": [
+            {
+              "type": "custom:apexcharts-card",
+              "header": {
+                "show": true,
+                "title": "ApexCharts-Card",
+                "show_states": true,
+                "colorize_states": true
+              },
+              "series": [
+                {
+                  "entity": "sensor.hacs",
+                  "data_generator": ""
+                },
+                {
+                  "entity": "sensor.mh_z19_temperature",
+                  "data_generator": ""
+                }
+              ]
+            }
+          ]
         }
       ]
     }
