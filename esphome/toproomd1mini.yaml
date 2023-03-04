@@ -1,0 +1,23 @@
+esphome:
+  name: toproomd1mini
+  platform: ESP8266
+  board: d1_mini
+
+wifi:
+  ssid: "MelbPC-NUE"
+  password: "peachspeak38"
+
+  # Enable fallback hotspot (captive portal) in case wifi connection fails
+  ap:
+    ssid: "toproomd1mini"
+
+logger:
+   
+web_server:
+
+api:
+
+ota:
+
+
+
