@@ -1,3 +1,6 @@
+substitutions:
+  hatoken: "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiI0MzA4YTc1OWI3YjI0OTFkYmZkNTBhZTE3NzM1ZDdmMSIsImlhdCI6MTY3Njc4MDEzNywiZXhwIjoxOTkyMTQwMTM3fQ.9u0X_pXfeIUdznuaDVd82TNp_4L4REagWIMc-9vskdU"
+
 esphome:
   name: toproomd1mini
   platform: ESP8266
