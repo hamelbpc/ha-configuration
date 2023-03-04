@@ -3,7 +3,7 @@ esphome:
   platform: ESP8266
   board: d1_mini
   on_boot:
-    priority: 200.0
+    priority: 600.0
     then:
       - delay: 1s
       - output.turn_on: gpio_red
