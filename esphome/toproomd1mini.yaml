@@ -18,6 +18,10 @@ esphome:
             - output.turn_off: gpio_red
             - output.turn_on: gpio_yellow
 
+http_request:
+  useragent: esphome/device
+  timeout: 10s
+
 wifi:
   ssid: "MelbPC-NUE"
   password: "peachspeak38"
