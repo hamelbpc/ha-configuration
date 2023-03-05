@@ -79,9 +79,15 @@ script:
             lambda: |-
               return new_state;
           then:
-            output.turn_on: gpio_red
+            - output.turn_on: gpio_red
+            - binary_sensor.template.publish:
+                id: toproom_red
+                state: True
           else:
-            output.turn_off: gpio_red
+            - output.turn_off: gpio_red
+            - binary_sensor.template.publish:
+                id: toproom_red
+                state: False
       - if:
           condition:
             lambda: |-
