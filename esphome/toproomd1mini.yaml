@@ -23,6 +23,8 @@ esphome:
                 new_state: true
                 turn_off_red_green: true            
       - delay: 5s
+      - script.execute:
+          id: statuslights
 
 http_request:
   useragent: esphome/device
