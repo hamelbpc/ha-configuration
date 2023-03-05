@@ -98,6 +98,48 @@ script:
             - output.turn_off: gpio_yellow
             - output.turn_off: gpio_green
 
+  - id: change_yellow
+    parameters:
+      new_state: bool
+      turn_off_red_green: bool
+    then:
+      - if:
+          condition:
+            lambda: |-
+              return new_state;
+          then:
+            output.turn_on: gpio_red
+          else:
+            output.turn_off: gpio_red
+      - if:
+          condition:
+            lambda: |-
+              return turn_off_red_green;
+          then:
+            - output.turn_off: gpio_yellow
+            - output.turn_off: gpio_green
+
+  - id: change_green
+    parameters:
+      new_state: bool
+      turn_off_red_yellow: bool
+    then:
+      - if:
+          condition:
+            lambda: |-
+              return new_state;
+          then:
+            output.turn_on: gpio_red
+          else:
+            output.turn_off: gpio_red
+      - if:
+          condition:
+            lambda: |-
+              return turn_off_red_yellow;
+          then:
+            - output.turn_off: gpio_yellow
+            - output.turn_off: gpio_green            
+
   - id: statuslights
     then:
       - http_request.get:
