@@ -95,6 +95,13 @@ script:
           then:
             - output.turn_off: gpio_yellow
             - output.turn_off: gpio_green
+            - binary_sensor.template.publish:
+                id: toproom_yellow
+                state: False
+            - binary_sensor.template.publish:
+                id: toproom_green
+                state: False
+
 
   - id: change_yellow
     parameters:
