@@ -146,4 +146,5 @@ script:
                     lambda: |-
                       return status_code == 200;
                   then:
-                    - if:
+                    - script.execute:
+                        id: boo
