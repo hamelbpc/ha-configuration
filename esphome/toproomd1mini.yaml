@@ -108,15 +108,15 @@ script:
             lambda: |-
               return new_state;
           then:
-            output.turn_on: gpio_red
+            output.turn_on: gpio_yellow
           else:
-            output.turn_off: gpio_red
+            output.turn_off: gpio_yellow
       - if:
           condition:
             lambda: |-
               return turn_off_red_green;
           then:
-            - output.turn_off: gpio_yellow
+            - output.turn_off: gpio_red
             - output.turn_off: gpio_green
 
   - id: change_green
@@ -129,16 +129,16 @@ script:
             lambda: |-
               return new_state;
           then:
-            output.turn_on: gpio_red
+            output.turn_on: gpio_green
           else:
-            output.turn_off: gpio_red
+            output.turn_off: gpio_green
       - if:
           condition:
             lambda: |-
               return turn_off_red_yellow;
           then:
             - output.turn_off: gpio_yellow
-            - output.turn_off: gpio_green            
+            - output.turn_off: gpio_red            
 
   - id: statuslights
     then:
