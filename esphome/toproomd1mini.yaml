@@ -10,6 +10,15 @@ esphome:
     then:
       - delay: 1s
       - output.turn_on: gpio_red
+      - binary_sensor.template.publish:
+          id: toproom_red
+          state: ON
+      - binary_sensor.template.publish:
+          id: toproom_yellow
+          state: OFF
+      - binary_sensor.template.publish:
+          id: toproom_green
+          state: OFF
       - delay: 30s
       - if:
           condition:
@@ -17,6 +26,33 @@ esphome:
           then:
             - output.turn_off: gpio_red
             - output.turn_on: gpio_yellow
+            - binary_sensor.template.publish:
+                id: toproom_yellow
+                state: OFF
+            - binary_sensor.template.publish:
+                 id: toproom_green
+                 state: OFF            
+      - delay: 5s
+
+
+script:
+  - id: statuslights
+    then:
+      - http_request.get:
+          url: http://192.168.81.162:8123/api/
+          headers:
+            Content-Type: application/json
+            Authorization: "Bearer ${hatoken}"
+          on_response:
+            then:
+              - if:
+                  condition:
+                    lambda: |-
+                      return status_code == 200;
+                  then:
+                    - if:
+                        
+
 
 http_request:
   useragent: esphome/device
@@ -48,4 +84,15 @@ output:
   - platform: gpio
     pin: D7
     id: gpio_green
+
+binary_sensor:
+  - platform: template
+    name: red
+    id: toproom_red
+  - platform: template
+    name: yellow
+    id: toproom_yellow
+  - platform: template
+    name: green
+    id: toproom_green        
 
