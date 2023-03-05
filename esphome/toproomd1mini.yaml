@@ -34,26 +34,6 @@ esphome:
                  state: OFF            
       - delay: 5s
 
-
-script:
-  - id: statuslights
-    then:
-      - http_request.get:
-          url: http://192.168.81.162:8123/api/
-          headers:
-            Content-Type: application/json
-            Authorization: "Bearer ${hatoken}"
-          on_response:
-            then:
-              - if:
-                  condition:
-                    lambda: |-
-                      return status_code == 200;
-                  then:
-                    - if:
-                        
-
-
 http_request:
   useragent: esphome/device
   timeout: 10s
@@ -96,3 +76,40 @@ binary_sensor:
     name: green
     id: toproom_green        
 
+script:
+  - id: change_red
+    parameters:
+      new_state: bool
+      turn_off_yellow_green: bool
+    then:
+      - if:
+          condition:
+            lambda: |-
+              return new_state;
+          then:
+            output.turn_on: gpio_red
+          else:
+            output.turn_off: gpio_red
+      - if:
+          condition:
+            lambda: |-
+              return turn_off_yellow_green;
+          then:
+            - output.turn_off: gpio_yellow
+            - output.turn_off: gpio_green
+
+  - id: statuslights
+    then:
+      - http_request.get:
+          url: http://192.168.81.162:8123/api/
+          headers:
+            Content-Type: application/json
+            Authorization: "Bearer ${hatoken}"
+          on_response:
+            then:
+              - if:
+                  condition:
+                    lambda: |-
+                      return status_code == 200;
+                  then:
+                    - if:
