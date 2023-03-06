@@ -10,18 +10,20 @@ esphome:
     then:
       - delay: 1s
       - script.execute:
-          id: change_red
+          id: change_light
+          light: gpio_red
           new_state: true
-          turn_off_yello_green: true
+          turn_other_lights_off: true
       - delay: 30s
       - if:
           condition:
             wifi.connected
           then:
             - script.execute:
-                id: change_yellow
+                id: change_light
+                light: gpio_yellow
                 new_state: true
-                turn_off_red_green: true            
+                turn_other_lights_off: true            
       - delay: 5s
       - script.execute:
           id: statuslights
@@ -57,95 +59,47 @@ output:
     pin: D7
     id: gpio_green
 
-binary_sensor:
-  - platform: template
-    name: red
-    id: toproom_red
-  - platform: template
-    name: yellow
-    id: toproom_yellow
-  - platform: template
-    name: green
-    id: toproom_green        
-
 script:
-  - id: change_red
+  - id: change_light
     parameters:
       new_state: bool
-      turn_off_yellow_green: bool
+      turn_other_lights_off: bool
+      light: string
     then:
       - if:
           condition:
             lambda: |-
-              return new_state;
-          then:
-            - output.turn_on: gpio_red
-            - binary_sensor.template.publish:
-                id: toproom_red
-                state: True
-          else:
-            - output.turn_off: gpio_red
-            - binary_sensor.template.publish:
-                id: toproom_red
-                state: False
-      - if:
-          condition:
-            lambda: |-
-              return turn_off_yellow_green;
-          then:
-            - output.turn_off: gpio_yellow
-            - output.turn_off: gpio_green
-            - binary_sensor.template.publish:
-                id: toproom_yellow
-                state: False
-            - binary_sensor.template.publish:
-                id: toproom_green
-                state: False
-
-
-  - id: change_yellow
-    parameters:
-      new_state: bool
-      turn_off_red_green: bool
-    then:
-      - if:
-          condition:
-            lambda: |-
-              return new_state;
-          then:
-            output.turn_on: gpio_yellow
-          else:
-            output.turn_off: gpio_yellow
-      - if:
-          condition:
-            lambda: |-
-              return turn_off_red_green;
+              return turn_other_lights_off;
           then:
             - output.turn_off: gpio_red
+            - output.turn_off: gpio_yellow
             - output.turn_off: gpio_green
-
-  - id: change_green
-    parameters:
-      new_state: bool
-      turn_off_red_yellow: bool
-    then:
       - if:
           condition:
             lambda: |-
               return new_state;
           then:
-            output.turn_on: gpio_green
-          else:
-            output.turn_off: gpio_green
-      - if:
-          condition:
-            lambda: |-
-              return turn_off_red_yellow;
-          then:
-            - output.turn_off: gpio_yellow
-            - output.turn_off: gpio_red            
+            - if:
+                condition:
+                  lambda:
+                    return light == "gpio_red";
+                then:
+                  - output.turn_on: gpio_red
+            - if:
+                condition:
+                  lambda:                  
+                    return light == "gpio_yellow";
+                then:
+                  - output.turn_on: gpio_yellow
+            - if:
+                condition:
+                  lambda:                  
+                    return light == "gpio_green";
+                then:
+                  - output.turn_on: gpio_green
+        
 
-  - id: statuslights
+  - id: statuslights 
     then:
       - http_request.get:
           url: http://192.168.81.162:8123/api/
@@ -159,5 +113,32 @@ script:
                     lambda: |-
                       return status_code == 200;
                   then:
-                    - script.execute:
-                        id: boo
+                    - if:
+                        condition:
+                          wifi.connected
+                        then:
+                          - script.execute:
+                              id: change_light
+                              light: gpio_green
+                              new_state: true
+                              turn_other_lights_off: true                                
+                  else:
+                    - if:
+                        condition:
+                          wifi.connected
+                        then:
+                          - script.execute:
+                              id: change_light                              
+                              light: gpio_yellow
+                              new_state: true
+                              turn_other_lights_off: true                                
+
+                        else:
+                          - script.execute:
+                              id: change_light                              
+                              light: gpio_red
+                              new_state: true
+                              turn_other_lights_off: true                  
+
+
+
