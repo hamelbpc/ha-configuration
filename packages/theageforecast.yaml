@@ -1,5 +1,0 @@
-theageforecast:
-  camera:
-    - platform: generic
-      name: theageforecast
-      file_path: /config/www/images/theageforecast.svg
