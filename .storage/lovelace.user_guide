@@ -1,101 +1,101 @@
 {
-    "version": 1,
-    "minor_version": 1,
-    "key": "lovelace.user_guide",
-    "data": {
-        "config": {
-            "views": [
+  "version": 1,
+  "minor_version": 1,
+  "key": "lovelace.user_guide",
+  "data": {
+    "config": {
+      "views": [
+        {
+          "theme": "Backend-selected",
+          "title": "HA Install",
+          "badges": [],
+          "cards": [
+            {
+              "type": "vertical-stack",
+              "cards": [
                 {
-                    "theme": "Backend-selected",
-                    "title": "HA Install",
-                    "badges": [],
-                    "cards": [
-                        {
-                            "type": "vertical-stack",
-                            "cards": [
-                                {
-                                    "type": "markdown",
-                                    "content": "Installed using Home Assistant Supervised.\n\nhttps://github.com/home-assistant/supervised-installer\n\nMainly followed the instructions, with one caveat because I was installing using wifi rather than an ethernet connection.\n\nThe home assistant location after install is **/usr/share/hassio**\nThis is confirmed by looking at contents of **/etc/hassio.json**\n",
-                                    "title": "Installing Home Assistant Supervised"
-                                },
-                                {
-                                    "type": "markdown",
-                                    "content": "Issue is that the install process disconnects and then reconnects to the network, this upsets the HA installer.\n\nSolution(run as root):\n```sh\ngit clone https://github.com/home-assistant/supervised-installer\ncd supervised-installer\nsed -i  '/systemctl restart/s/^/#/g' homeassistant-supervised/DEBIAN/postinst\nsudo chmod 555 homeassistant-supervised/DEBIAN/p*\nsudo dpkg-deb --build --root-owner-group homeassistant-supervised\ndpkg -i homeassistant-supervised.deb ..\n```\n\n",
-                                    "title": "Install HA Supervised over wifi connection"
-                                }
-                            ]
-                        }
-                    ]
+                  "type": "markdown",
+                  "content": "Installed using Home Assistant Supervised.\n\nhttps://github.com/home-assistant/supervised-installer\n\nMainly followed the instructions, with one caveat because I was installing using wifi rather than an ethernet connection.\n\nThe home assistant location after install is **/usr/share/hassio**\nThis is confirmed by looking at contents of **/etc/hassio.json**\n",
+                  "title": "Installing Home Assistant Supervised"
                 },
                 {
-                    "theme": "Backend-selected",
-                    "title": "Basic Configuration",
-                    "path": "basic-configuration",
-                    "badges": [],
-                    "cards": [
-                        {
-                            "type": "markdown",
-                            "content": "Go to profile page http://localhost:8123/profile and enable Advanced Mode",
-                            "title": "Enable advanced mode"
-                        },
-                        {
-                            "type": "markdown",
-                            "content": "in Configuration section. At a minimum, install File Explorer.\n",
-                            "title": "enable addons"
-                        }
-                    ]
-                },
-                {
-                    "theme": "Backend-selected",
-                    "title": "Advanced Guide",
-                    "path": "i",
-                    "badges": [],
-                    "cards": [
-                        {
-                            "type": "markdown",
-                            "content": "Many options:\n- find a Home Assistant Addon\n- create your own Home Assistant Addon\n- run the Portainer addon which allows you to create your own\n\nI have chosen a custom solution, because I can.\n\nhttps://gist.github.com/raspberrypisig/4771a80e880c814de8e962df306610d9",
-                            "title": "Install additional docker containers"
-                        }
-                    ]
-                },
-                {
-                    "theme": "Backend-selected",
-                    "title": "DOCKER CONTAINERS",
-                    "path": "docker-containers",
-                    "badges": [],
-                    "cards": [
-                        {
-                            "type": "vertical-stack",
-                            "cards": [
-                                {
-                                    "type": "markdown",
-                                    "content": "Find details in /etc/docker/compose directory\n\nYou can find details in portainer\n\nhttp://localhost:9000\n",
-                                    "title": "Docker containers"
-                                }
-                            ]
-                        }
-                    ]
-                },
-                {
-                    "theme": "Backend-selected",
-                    "title": "configuration.yaml",
-                    "path": "configurationyaml",
-                    "badges": [],
-                    "cards": [
-                        {
-                            "type": "vertical-stack",
-                            "cards": [
-                                {
-                                    "type": "markdown",
-                                    "content": "in-depth explanation\n\nhttps://www.youtube.com/watch?v=FfjSA2o_0KA\n\n",
-                                    "title": "splitting configuration"
-                                }
-                            ]
-                        }
-                    ]
+                  "type": "markdown",
+                  "content": "Issue is that the install process disconnects and then reconnects to the network, this upsets the HA installer.\n\nSolution(run as root):\n```sh\ngit clone https://github.com/home-assistant/supervised-installer\ncd supervised-installer\nsed -i  '/systemctl restart/s/^/#/g' homeassistant-supervised/DEBIAN/postinst\nsudo chmod 555 homeassistant-supervised/DEBIAN/p*\nsudo dpkg-deb --build --root-owner-group homeassistant-supervised\ndpkg -i homeassistant-supervised.deb ..\n```\n\n",
+                  "title": "Install HA Supervised over wifi connection"
                 }
-            ],
-            "title": "User Guide"
+              ]
+            }
+          ]
+        },
+        {
+          "theme": "Backend-selected",
+          "title": "Basic Configuration",
+          "path": "basic-configuration",
+          "badges": [],
+          "cards": [
+            {
+              "type": "markdown",
+              "content": "Go to profile page http://localhost:8123/profile and enable Advanced Mode",
+              "title": "Enable advanced mode"
+            },
+            {
+              "type": "markdown",
+              "content": "in Configuration section. At a minimum, install File Explorer.\n",
+              "title": "enable addons"
+            }
+          ]
+        },
+        {
+          "theme": "Backend-selected",
+          "title": "Advanced Guide",
+          "path": "i",
+          "badges": [],
+          "cards": [
+            {
+              "type": "markdown",
+              "content": "Many options:\n- find a Home Assistant Addon\n- create your own Home Assistant Addon\n- run the Portainer addon which allows you to create your own\n\nI have chosen a custom solution, because I can.\n\nhttps://gist.github.com/raspberrypisig/4771a80e880c814de8e962df306610d9",
+              "title": "Install additional docker containers"
+            }
+          ]
+        },
+        {
+          "theme": "Backend-selected",
+          "title": "DOCKER CONTAINERS",
+          "path": "docker-containers",
+          "badges": [],
+          "cards": [
+            {
+              "type": "vertical-stack",
+              "cards": [
+                {
+                  "type": "markdown",
+                  "content": "Find details in /etc/docker/compose directory\n\nYou can find details in portainer\n\nhttp://localhost:9000\n",
+                  "title": "Docker containers"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "theme": "Backend-selected",
+          "title": "configuration.yaml",
+          "path": "configurationyaml",
+          "badges": [],
+          "cards": [
+            {
+              "type": "vertical-stack",
+              "cards": [
+                {
+                  "type": "markdown",
+                  "content": "in-depth explanation\n\nhttps://www.youtube.com/watch?v=FfjSA2o_0KA",
+                  "title": "splitting configuration"
+                }
+              ]
+            }
+          ]
         }
+      ],
+      "title": "User Guide"
     }
+  }
 }
