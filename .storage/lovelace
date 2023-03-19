@@ -177,6 +177,14 @@
               }
             }
           ]
+        },
+        {
+          "theme": "Backend-selected",
+          "title": "forecast",
+          "path": "forecast",
+          "type": "panel",
+          "badges": [],
+          "cards": []
         }
       ]
     }
