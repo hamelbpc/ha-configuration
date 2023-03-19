@@ -1,0 +1,5 @@
+theageforecast:
+  camera:
+    - platform: local_file
+      name: theageforecast
+      file_path: /config/www/images/theageforecast.svg
