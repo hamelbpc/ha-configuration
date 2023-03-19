@@ -184,7 +184,13 @@
           "path": "forecast",
           "type": "panel",
           "badges": [],
-          "cards": []
+          "cards": [
+            {
+              "type": "picture-elements",
+              "elements": [],
+              "camera_image": "camera.theageforecast"
+            }
+          ]
         }
       ]
     }
