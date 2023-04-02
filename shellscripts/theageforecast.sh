@@ -1,8 +1,6 @@
 #!/usr/bin/env bash
 set -x
 apk add htmlq --repository=http://dl-cdn.alpinelinux.org/alpine/edge/testing/
-curl -sSL https://weather.theage.com.au/local-forecast/vic/melbourne | htmlq "#data"
-#curl -sSL https://weather.theage.com.au/local-forecast/vic/melbourne | htmlq "#ga_48_hours svg" 
-#sed -r 's/xlink:href/href/g' /config/www/theageforecast.svg
+curl -sSL https://weather.theage.com.au/local-forecast/vic/melbourne | htmlq "#data" | htmlq "htmlq -t ".timestamp, .datelabel, .label, .temp_c .prob_precip, .wind_speed_direction, .wind_speed_kph, .image_filename, .temp_image img, .delta_t_c" "
 
 
