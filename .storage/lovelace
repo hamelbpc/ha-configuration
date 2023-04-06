@@ -183,6 +183,7 @@
           "title": "FORECAST",
           "path": "forecast",
           "icon": "",
+          "type": "panel",
           "badges": [],
           "cards": [
             {
