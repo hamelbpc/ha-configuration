@@ -225,7 +225,7 @@
                       }
                     },
                     {
-                      "id": "rain",
+                      "id": "wind",
                       "show": true,
                       "opposite": true,
                       "min": 0,
@@ -236,7 +236,7 @@
                           "style": {
                             "colors": "#72C8EE"
                           },
-                          "formatter": "EVAL:function(value) {\n  return value.toString() + \"%\";\n}    \n"
+                          "formatter": "EVAL:function(value) {\n  return value.toString() + \"km/h\";\n}    \n"
                         }
                       }
                     }
@@ -256,16 +256,16 @@
                     },
                     {
                       "entity": "sensor.theage_48_hour_forecast",
-                      "yaxis_id": "rain",
-                      "name": "Rain Prob",
+                      "yaxis_id": "wind",
+                      "name": "Wind",
                       "type": "area",
-                      "color": "#72C8EE",
+                      "color": "green",
                       "unit": "%",
                       "stroke_width": 0,
                       "show": {
                         "legend_value": false
                       },
-                      "data_generator": "return entity.attributes.results.map((entry) => [entry.timestamp, entry.rain]);   \n"
+                      "data_generator": "return entity.attributes.results.map((entry) => [entry.timestamp, entry.wind]);   \n"
                     }
                   ]
                 },
