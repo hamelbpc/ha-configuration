@@ -268,6 +268,87 @@
                       "data_generator": "return entity.attributes.results.map((entry) => [entry.timestamp, entry.rain]);   \n"
                     }
                   ]
+                },
+                {
+                  "type": "custom:apexcharts-card",
+                  "graph_span": "2d",
+                  "update_interval": "1min",
+                  "all_series_config": {
+                    "stroke_width": 3
+                  },
+                  "span": {
+                    "start": "hour"
+                  },
+                  "header": {
+                    "show": false,
+                    "title": "ApexCharts-Card"
+                  },
+                  "apex_config": {
+                    "chart": {
+                      "width": 560,
+                      "height": 285
+                    }
+                  },
+                  "yaxis": [
+                    {
+                      "id": "temperature",
+                      "show": true,
+                      "min": 10,
+                      "max": 35,
+                      "apex_config": {
+                        "tickAmount": 5,
+                        "labels": {
+                          "style": {
+                            "colors": "#ee3311"
+                          },
+                          "formatter": "EVAL:function(value) {\n  return value.toString() + \"℃\";\n}\n"
+                        }
+                      }
+                    },
+                    {
+                      "id": "rain",
+                      "show": true,
+                      "opposite": true,
+                      "min": 0,
+                      "max": 100,
+                      "apex_config": {
+                        "tickAmount": 5,
+                        "labels": {
+                          "style": {
+                            "colors": "#72C8EE"
+                          },
+                          "formatter": "EVAL:function(value) {\n  return value.toString() + \"%\";\n}    \n"
+                        }
+                      }
+                    }
+                  ],
+                  "series": [
+                    {
+                      "entity": "sensor.theage_48_hour_forecast",
+                      "yaxis_id": "temperature",
+                      "name": "Temp",
+                      "color": "#ee3311",
+                      "unit": "℃",
+                      "curve": "straight",
+                      "show": {
+                        "legend_value": false
+                      },
+                      "data_generator": "return entity.attributes.results.map((entry) => [entry.timestamp, entry.temperature]);\n"
+                    },
+                    {
+                      "entity": "sensor.theage_48_hour_forecast",
+                      "yaxis_id": "rain",
+                      "name": "Rain Prob",
+                      "type": "area",
+                      "color": "#72C8EE",
+                      "unit": "%",
+                      "stroke_width": 0,
+                      "show": {
+                        "legend_value": false
+                      },
+                      "data_generator": "return entity.attributes.results.map((entry) => [entry.timestamp, entry.rain]);   \n"
+                    }
+                  ]
                 }
               ]
             }
