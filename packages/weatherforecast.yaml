@@ -1,0 +1,9 @@
+weatherforecast:
+  rest:
+    resource: http://localhost:1880/endpoint/theageforecast3
+    scan_interval: 1800
+    sensor:
+      - name: "TheAge 48 hour Forecast"
+        value_template: "OK"
+        json_attributes:
+          - results
