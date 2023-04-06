@@ -339,10 +339,8 @@
                       "entity": "sensor.theage_48_hour_forecast",
                       "yaxis_id": "wind",
                       "name": "Wind",
-                      "type": "area",
                       "color": "green",
-                      "unit": "%",
-                      "stroke_width": 0,
+                      "unit": "km/h",
                       "show": {
                         "legend_value": false
                       },
