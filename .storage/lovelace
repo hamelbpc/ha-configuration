@@ -358,7 +358,22 @@
           "title": "Internet Speed",
           "path": "internet-speed",
           "badges": [],
-          "cards": []
+          "cards": [
+            {
+              "type": "entities",
+              "entities": [
+                {
+                  "entity": "sensor.download_speed"
+                },
+                {
+                  "entity": "sensor.upload_speed"
+                },
+                {
+                  "entity": "sensor.ping_latency"
+                }
+              ]
+            }
+          ]
         }
       ]
     }
