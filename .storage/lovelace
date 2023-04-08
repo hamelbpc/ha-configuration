@@ -372,6 +372,21 @@
                   "entity": "sensor.ping_latency"
                 }
               ]
+            },
+            {
+              "type": "history-graph",
+              "entities": [
+                {
+                  "entity": "sensor.download_speed"
+                },
+                {
+                  "entity": "sensor.upload_speed"
+                },
+                {
+                  "entity": "sensor.ping_latency"
+                }
+              ],
+              "hours_to_show": 72
             }
           ]
         }
