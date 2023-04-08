@@ -352,6 +352,13 @@
               ]
             }
           ]
+        },
+        {
+          "theme": "Backend-selected",
+          "title": "Internet Speed",
+          "path": "internet-speed",
+          "badges": [],
+          "cards": []
         }
       ]
     }
