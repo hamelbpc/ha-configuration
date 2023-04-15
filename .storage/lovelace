@@ -118,7 +118,8 @@
               "show_zoom": true,
               "show_recenter": true,
               "show_playback": true,
-              "zoom_level": 7
+              "zoom_level": 7,
+              "data_source": "RainViewer-Original"
             }
           ]
         },
