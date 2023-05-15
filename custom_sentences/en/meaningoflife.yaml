@@ -1,0 +1,7 @@
+language: "en"
+intents:
+  SetVolume:
+    data:
+      - sentences:
+          - "define the meaning of life"
+          
