@@ -1,0 +1,5 @@
+downloadspeed:
+  intent_script:
+    DownloadSpeed:
+      speech:
+        text: Please report download speed
