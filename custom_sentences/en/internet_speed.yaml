@@ -1,0 +1,7 @@
+language: "en"
+intents:
+  DownloadSpeed:
+    data:
+      - sentences:
+          - "what is [the] download speed"
+          
