@@ -1,6 +1,6 @@
 language: "en"
 intents:
-  SetVolume:
+  MeaningOfLife:
     data:
       - sentences:
           - "define the meaning of life"
