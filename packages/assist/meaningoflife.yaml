@@ -2,4 +2,4 @@ downloadspeed:
   intent_script:
     MeaningOfLife:
       speech:
-        text: The meaning of life is {{ states.input_number.meaningoflife.state }}
+        text: The meaning of life is {{ states.input_number.meaningoflife.state | int }}
