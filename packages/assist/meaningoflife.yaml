@@ -1,5 +1,5 @@
 downloadspeed:
   intent_script:
-    DownloadSpeed:
+    MeaningOfLife:
       speech:
         text: Please report download speed
