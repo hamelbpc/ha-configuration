@@ -17,4 +17,4 @@ homeassistant:
 
 #sensor: !include_dir_merge_list sensors/
 
-intent:
+conversation:
