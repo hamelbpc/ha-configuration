@@ -4,5 +4,5 @@ intents:
   MeaningOfLife:
     data:
       - sentences:
-          - "define [the] meaning of life"
+          - "[what is] [the] meaning of life"
           
