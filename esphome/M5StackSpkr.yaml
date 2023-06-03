@@ -92,6 +92,10 @@ binary_sensor:
       inverted: true
     name: Button
     id: echo_button
+    
+    on_press:
+      then:
+        - voice_assistant.start:   
     on_multi_click:
       - timing:
           - ON FOR AT MOST 350ms
