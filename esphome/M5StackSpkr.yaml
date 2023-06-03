@@ -95,7 +95,7 @@ binary_sensor:
     
     on_press:
       then:
-        - voice_assistant.start:   
+        - voice_assistant.start:
     on_multi_click:
       - timing:
           - ON FOR AT MOST 350ms
