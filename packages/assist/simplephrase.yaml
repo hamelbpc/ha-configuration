@@ -1,0 +1,5 @@
+simplephrase:
+  intent_script:
+    SimplePhrase:
+      speech:
+        text: I have turned the TV on
