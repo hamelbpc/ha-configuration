@@ -7,9 +7,9 @@ esphome:
   name: ${name}
   name_add_mac_suffix: false
   friendly_name: ${friendly_name}
-api:
-  encryption:
-    key: fHE8dTe9NeqcaScx3BHDR/ZS5VaBjt20v1sklFie5Wk=
+#api:
+#  encryption:
+#    key: fHE8dTe9NeqcaScx3BHDR/ZS5VaBjt20v1sklFie5Wk=
 
 
 wifi:
