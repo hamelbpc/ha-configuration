@@ -53,7 +53,7 @@ voice_assistant:
   microphone: echo_microphone
   on_stt_end:
     - lambda: |-
-        ESP_LOGD("STT has run");
+        ESP_LOGD("STT", "STT has run");
   on_start:
     - light.turn_on:
         id: led
