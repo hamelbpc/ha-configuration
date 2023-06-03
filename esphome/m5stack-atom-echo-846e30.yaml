@@ -102,21 +102,21 @@ binary_sensor:
         - voice_assistant.start:
     on_release:
       - voice_assistant.stop:          
-    on_multi_click:
-      - timing:
-          - ON FOR AT MOST 350ms
-          - OFF FOR AT LEAST 10ms
-        then:
-          - media_player.toggle: media_out
-      - timing:
-          - ON FOR AT LEAST 350ms
-        then:
-          - voice_assistant.start:
-      - timing:
-          - ON FOR AT LEAST 350ms
-          - OFF FOR AT LEAST 10ms
-        then:
-          - voice_assistant.stop:
+#    on_multi_click:
+#      - timing:
+#          - ON FOR AT MOST 350ms
+#          - OFF FOR AT LEAST 10ms
+#        then:
+#          - media_player.toggle: media_out
+#      - timing:
+#          - ON FOR AT LEAST 350ms
+#        then:
+#          - voice_assistant.start:
+#      - timing:
+#          - ON FOR AT LEAST 350ms
+#          - OFF FOR AT LEAST 10ms
+#        then:
+#          - voice_assistant.stop:
 
 media_player:
   - platform: i2s_audio
