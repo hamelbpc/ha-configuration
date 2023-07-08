@@ -14,17 +14,17 @@
             {
               "type": "entities",
               "entities": [
-                "sensor.hacs"
-              ],
-              "title": "Dungeon"
-            },
-            {
-              "type": "entities",
-              "entities": [
                 "sensor.mh_z19_co2_value",
                 "sensor.mh_z19_temperature"
               ],
               "title": "Maker Room"
+            },
+            {
+              "type": "entities",
+              "entities": [
+                "sensor.hacs"
+              ],
+              "title": "Dungeon"
             },
             {
               "type": "entities",
