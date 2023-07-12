@@ -34,3 +34,16 @@
   - service: shell_command.push_to_github
     data: {}
   mode: single
+- id: '1689132683051'
+  alias: hasip
+  description: ''
+  trigger:
+  - platform: webhook
+    allowed_methods:
+    - POST
+    - PUT
+    local_only: true
+    webhook_id: vsZJKSeRNc0Ttm1ayNigmXbA
+  condition: []
+  action: []
+  mode: single
