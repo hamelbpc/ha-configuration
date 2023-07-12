@@ -45,5 +45,28 @@
     local_only: true
     webhook_id: vsZJKSeRNc0Ttm1ayNigmXbA
   condition: []
-  action: []
+  action:
+  - if:
+    - condition: template
+      value_template: '{{trigger.json.menu_id == ''quit''}}'
+    then:
+    - service: persistent_notification.create
+      data:
+        message: pressed 9. quit.
+    else:
+    - if:
+      - condition: template
+        value_template: '{{trigger.json.menu_id == ''light_on''}}'
+      then:
+      - service: persistent_notification.create
+        data:
+          message: Pressed 1. Light ON.
+      else:
+      - if:
+        - condition: template
+          value_template: '{{trigger.json.menu_id == ''light_off''}}'
+        then:
+        - service: persistent_notification.create
+          data:
+            message: Pressed 2. Light OFF.
   mode: single
