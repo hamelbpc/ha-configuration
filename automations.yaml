@@ -103,9 +103,9 @@
               message: Your entrance has been logged.
               post_action: hangup
             '5678':
-              id:
-              message:
-              post_action:
+              id: download
+              message: '{{ states.sensor.download_speed.state }}'
+              post_action: return
             default:
               id: wrong_code
               message: Wrong code, please try again
