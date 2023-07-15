@@ -90,8 +90,8 @@
       input:
         command: answer
         number:
-        - 1
-        - 2
+        - '1'
+        - '2'
         - '*'
         menu:
           message: Please enter your access code.
