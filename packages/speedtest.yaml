@@ -1,15 +1,15 @@
 speedtest:
   command_line:
     - sensor:
-      name: "Ookla Speedtest Data"
-      command: "/config/speedtest -f json --accept-license --accept-gdpr"
-      scan_interval: 3600
-      command_timeout: 45
-      json_attributes:
-        - ping
-        - download
-        - upload
-      value_template: "{{ value_json['result']['url'] }}"
+        name: "Ookla Speedtest Data"
+        command: "/config/speedtest -f json --accept-license --accept-gdpr"
+        scan_interval: 3600
+        command_timeout: 45
+        json_attributes:
+          - ping
+          - download
+          - upload
+        value_template: "{{ value_json['result']['url'] }}"
       
 #  sensor:
 #    - platform: command_line
