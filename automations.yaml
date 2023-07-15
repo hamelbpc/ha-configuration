@@ -90,7 +90,7 @@
       input:
         command: answer
         number:
-        - '1'
+        - 1
         menu:
           message: Please enter your access code
           choices_are_pin: true
