@@ -102,6 +102,10 @@
               id: maintenance
               message: Your entrance has been logged.
               post_action: hangup
+            '5678':
+              id:
+              message:
+              post_action:
             default:
               id: wrong_code
               message: Wrong code, please try again
