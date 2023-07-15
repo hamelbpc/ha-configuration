@@ -73,7 +73,13 @@
 - id: '1689390192597'
   alias: hasip2
   description: ''
-  trigger: []
+  trigger:
+  - platform: webhook
+    allowed_methods:
+    - POST
+    - PUT
+    local_only: true
+    webhook_id: sip_call_webhook_id
   condition: []
   action: []
   mode: single
