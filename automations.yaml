@@ -105,7 +105,8 @@
               post_action: hangup
             '5678':
               id: downloadspeed
-              message: '{{ states.sensor.download_speed.state }}'
+              message:
+                '[object Object]':
               post_action: return
             default:
               id: wrong_code
