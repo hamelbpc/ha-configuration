@@ -91,8 +91,7 @@
         command: answer
         number: '1'
         menu:
-          message: Please enter your access code is {{ states.sensor.download_speed.state
-            }}
+          message: Please enter your access code.
           choices_are_pin: true
           choices:
             '1234':
