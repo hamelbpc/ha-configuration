@@ -89,7 +89,7 @@
       addon: c7744bff_ha-sip
       input:
         command: answer
-        number: '5551234456'
+        number: hamelbpc2
         menu:
           message: Bye
           post_action: hangup
