@@ -103,7 +103,7 @@
               message: Your entrance has been logged.
               post_action: hangup
             '5678':
-              id: download
+              id: downloadspeed
               message: '{{ states.sensor.download_speed.state }}'
               post_action: return
             default:
