@@ -1,40 +1,46 @@
 webhook_to_call:
-    entered_menu: vsZJKSeRNc0Ttm1ayNigmXbA
+  entered_menu: vsZJKSeRNc0Ttm1ayNigmXbA
 menu:
-    message: Press 1 to turn light on, press 2 to turn light off,press 3 to test submenu, press 9 to quit.
-    language: en
-    choices_are_pin: false
-    id: main
-    #action:
-    #  domain: homeassistant
-    #  service: turn_on
-    #  entity_id: script.test
-    choices:
+  message: >- 
+    Press 1 to turn light on, 
+    press 2 to turn light off,
+    press 3 to test submenu, 
+    press 9 to quit.
+  language: en
+  choices_are_pin: false
+  id: main
+  #action:
+  #  domain: homeassistant
+  #  service: turn_on
+  #  entity_id: script.test
+  choices:
+    '1':
+      id: light_on
+      message: Turning light on.
+      post_action: return
+    '2':
+      id: light_off
+      message: Turning light off.
+      post_action: return
+    '3':
+      id: submenu
+      message: Welcome to submenu. Press 1 for greeting. Press 2 to return to main menu.
+      choices:
         '1':
-            id: light_on
-            message: Turning light on.
-            post_action: return
+          id: greeting
+          message: Howdy, partner.
+          post_action: return
         '2':
-            id: light_off
-            message: Turning light off.
-            post_action: return
-        '3':
-           id: submenu
-           message: Welcome to submenu. Press 1 for greeting. Press 2 to return to main menu.
-           choices:
-               '1':
-                   id: greeting
-                   message: Howdy, partner.
-                   post_action: return
-               '2':
-                   id: submenureturn
-                   message: back 1 level
-                   post_action: jump main
-        '9':
-            id: quit
-            message: Bye. Bye....
-            post_action: hangup
-        'default':
-            id: wrong_code
-            message: Wrong code, please try again
-            post_action: return
+          id: submenureturn
+          message: back 1 level
+          post_action: jump main
+    '9':
+      id: quit
+      message: Bye. Bye....
+      post_action: hangup
+        
+    'default':
+      id: wrong_code
+      message: Wrong code, please try again
+      post_action: return
+            
