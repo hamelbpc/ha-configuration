@@ -70,3 +70,10 @@
           data:
             message: Pressed 2. Light OFF.
   mode: single
+- id: '1689390192597'
+  alias: hasip2
+  description: ''
+  trigger: []
+  condition: []
+  action: []
+  mode: single
