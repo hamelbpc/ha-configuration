@@ -16,7 +16,7 @@ menu:
   choices:
     '1':
       id: light_on
-      message: "Turning light on {{ states.sensor.download_speed.state }}."
+      message: Turning light on.
       post_action: return
     '2':
       id: light_off
