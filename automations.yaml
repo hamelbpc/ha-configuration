@@ -80,6 +80,8 @@
     - PUT
     local_only: true
     webhook_id: sip_call_webhook_id
-  condition: []
+  condition:
+  - condition: template
+    value_template: '{{ trigger.json.sip_account == 2 }}'
   action: []
   mode: single
