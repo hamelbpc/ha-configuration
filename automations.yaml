@@ -89,6 +89,7 @@
       addon: c7744bff_ha-sip
       input:
         command: answer
+        number: '1'
         menu:
           message: Bye
           post_action: hangup
