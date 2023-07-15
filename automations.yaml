@@ -89,10 +89,7 @@
       addon: c7744bff_ha-sip
       input:
         command: answer
-        number:
-        - '1'
-        - '2'
-        - '*'
+        number: '1'
         menu:
           message: Please enter your access code.
           choices_are_pin: true
