@@ -91,6 +91,19 @@
         command: answer
         number: '1'
         menu:
-          message: Bye
-          post_action: hangup
+          message: Please enter your access code
+          choices_are_pin: true
+          choices:
+            '1234':
+              id: owner
+              message: Welcome beautiful.
+              post_action: hangup
+            '5432':
+              id: maintenance
+              message: Your entrance has been logged.
+              post_action: hangup
+            default:
+              id: wrong_code
+              message: Wrong code, please try again
+              post_action: return
   mode: single
