@@ -104,7 +104,8 @@
               post_action: hangup
             '5678':
               id: downloadspeed
-              message: ' Download speed is {{ states.sensor.download_speed.state }}'
+              message: Download speed is {{ states.sensor.download_speed.state }}
+                mega bits per second
               post_action: return
             default:
               id: wrong_code
