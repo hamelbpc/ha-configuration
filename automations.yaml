@@ -111,7 +111,7 @@
               post_action: return
             '9999':
               id: quit
-              message: Thanks you. Come again.
+              message: Thank you. Come again.
               post_action: hangup
             default:
               id: wrong_code
