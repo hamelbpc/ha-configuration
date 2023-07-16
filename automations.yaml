@@ -82,8 +82,7 @@
     webhook_id: sip_call_webhook_id
   condition:
   - condition: template
-    value_template: '{{ trigger.json.sip_account == 2 and trigger.json.event == "entered_menu"
-      }}'
+    value_template: '{{ trigger.json.sip_account == 2 }}'
   action:
   - service: hassio.addon_stdin
     data_template:
