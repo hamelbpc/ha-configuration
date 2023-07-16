@@ -106,8 +106,8 @@
             '5678':
               id: downloadspeed
               message: Download speed is {{ states.sensor.download_speed.state }}
-                mega bits per second Upload speed is {{ states.sensor.upload_speed.state
-                }} mega bits per second
+                mega bits per second. Upload speed is {{ states.sensor.upload_speed.state
+                }} mega bits per second.
               post_action: return
             '9999':
               id: quit
