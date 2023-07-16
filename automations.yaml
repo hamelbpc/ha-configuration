@@ -91,7 +91,8 @@
         command: answer
         number: '{{ trigger.json.parsed_caller }}'
         menu:
-          message: Please enter your access code.
+          message: Please enter your 4 pin access code. 5678 for download and upload
+            speed at the club. 9999 to quit.
           choices_are_pin: true
           choices:
             '1234':
@@ -105,7 +106,8 @@
             '5678':
               id: downloadspeed
               message: Download speed is {{ states.sensor.download_speed.state }}
-                mega bits per second
+                mega bits per second Upload speed is {{ states.sensor.upload_speed.state
+                }} mega bits per second
               post_action: return
             default:
               id: wrong_code
