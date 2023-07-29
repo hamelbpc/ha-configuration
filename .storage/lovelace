@@ -406,16 +406,16 @@
               "type": "custom:apexcharts-card",
               "header": {
                 "show": true,
-                "title": "ApexCharts-Card",
+                "title": "Solar Inverter Data",
                 "show_states": true,
                 "colorize_states": true
               },
               "series": [
                 {
-                  "entity": "sensor.hacs"
+                  "entity": "sensor.solar_pac"
                 },
                 {
-                  "entity": "sensor.download_speed"
+                  "entity": "sensor.solar_e_today"
                 }
               ]
             }
