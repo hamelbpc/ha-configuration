@@ -98,6 +98,28 @@
               "slot_r5": "sun_following"
             },
             {
+              "type": "grid",
+              "square": false,
+              "columns": 1,
+              "cards": [
+                {
+                  "type": "weather-forecast",
+                  "entity": "weather.endeavour_hills",
+                  "show_forecast": false
+                },
+                {
+                  "type": "weather-forecast",
+                  "entity": "weather.endeavour_hills_hourly",
+                  "show_forecast": false
+                },
+                {
+                  "type": "weather-forecast",
+                  "entity": "weather.melbpc",
+                  "show_forecast": false
+                }
+              ]
+            },
+            {
               "type": "entities",
               "entities": [
                 "sensor.mh_z19_co2_value",
@@ -137,28 +159,6 @@
                 "sensor.upload_speed"
               ],
               "title": "Sensor"
-            },
-            {
-              "type": "grid",
-              "square": false,
-              "columns": 1,
-              "cards": [
-                {
-                  "type": "weather-forecast",
-                  "entity": "weather.endeavour_hills",
-                  "show_forecast": false
-                },
-                {
-                  "type": "weather-forecast",
-                  "entity": "weather.endeavour_hills_hourly",
-                  "show_forecast": false
-                },
-                {
-                  "type": "weather-forecast",
-                  "entity": "weather.melbpc",
-                  "show_forecast": false
-                }
-              ]
             },
             {
               "type": "entities",
