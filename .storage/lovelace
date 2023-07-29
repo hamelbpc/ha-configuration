@@ -122,6 +122,26 @@
             {
               "type": "entities",
               "entities": [
+                "sensor.download_speed",
+                "sensor.endeavour_hills_short_text_0",
+                "sensor.endeavour_hills_short_text_1",
+                "sensor.ookla_speedtest_data",
+                "sensor.ping_latency",
+                "sensor.scoresby_humidity",
+                "sensor.scoresby_rain_since_9am",
+                "sensor.scoresby_temp",
+                "sensor.scoresby_temp_feels_like",
+                "sensor.solar_e_today",
+                "sensor.solar_error",
+                "sensor.solar_pac",
+                "sensor.solar_status",
+                "sensor.upload_speed"
+              ],
+              "title": "Sensor"
+            },
+            {
+              "type": "entities",
+              "entities": [
                 "sensor.mh_z19_co2_value",
                 "sensor.mh_z19_temperature"
               ],
@@ -139,26 +159,6 @@
               "entities": [
                 "person.ha"
               ]
-            },
-            {
-              "type": "entities",
-              "entities": [
-                "sensor.download_speed",
-                "sensor.endeavour_hills_short_text_0",
-                "sensor.endeavour_hills_short_text_1",
-                "sensor.ookla_speedtest_data",
-                "sensor.ping_latency",
-                "sensor.scoresby_humidity",
-                "sensor.scoresby_rain_since_9am",
-                "sensor.scoresby_temp",
-                "sensor.scoresby_temp_feels_like",
-                "sensor.solar_e_today",
-                "sensor.solar_error",
-                "sensor.solar_pac",
-                "sensor.solar_status",
-                "sensor.upload_speed"
-              ],
-              "title": "Sensor"
             },
             {
               "type": "entities",
