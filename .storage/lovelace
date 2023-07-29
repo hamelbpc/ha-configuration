@@ -423,7 +423,7 @@
               "type": "custom:apexcharts-card",
               "header": {
                 "show": true,
-                "title": "Solar Inverter Data",
+                "title": "Solar Inverter Data - 7 days",
                 "show_states": true,
                 "colorize_states": true
               },
