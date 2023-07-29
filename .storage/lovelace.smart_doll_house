@@ -183,25 +183,7 @@
           "title": "Inverter",
           "path": "inverter",
           "badges": [],
-          "cards": [
-            {
-              "type": "custom:apexcharts-card",
-              "header": {
-                "show": true,
-                "title": "ApexCharts-Card",
-                "show_states": true,
-                "colorize_states": true
-              },
-              "series": [
-                {
-                  "entity": "sensor.solar_pac"
-                },
-                {
-                  "entity": "sensor.solar_e_today"
-                }
-              ]
-            }
-          ]
+          "cards": []
         }
       ]
     }
