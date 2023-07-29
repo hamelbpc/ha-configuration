@@ -12,84 +12,6 @@
           "title": "Home",
           "cards": [
             {
-              "type": "entities",
-              "entities": [
-                "sensor.mh_z19_co2_value",
-                "sensor.mh_z19_temperature"
-              ],
-              "title": "Maker Room"
-            },
-            {
-              "type": "entities",
-              "entities": [
-                "sensor.hacs"
-              ],
-              "title": "Dungeon"
-            },
-            {
-              "type": "entities",
-              "entities": [
-                "person.ha"
-              ]
-            },
-            {
-              "type": "entities",
-              "entities": [
-                "sensor.download_speed",
-                "sensor.endeavour_hills_short_text_0",
-                "sensor.endeavour_hills_short_text_1",
-                "sensor.ookla_speedtest_data",
-                "sensor.ping_latency",
-                "sensor.scoresby_humidity",
-                "sensor.scoresby_rain_since_9am",
-                "sensor.scoresby_temp",
-                "sensor.scoresby_temp_feels_like",
-                "sensor.solar_e_today",
-                "sensor.solar_error",
-                "sensor.solar_pac",
-                "sensor.solar_status",
-                "sensor.upload_speed"
-              ],
-              "title": "Sensor"
-            },
-            {
-              "type": "grid",
-              "square": false,
-              "columns": 1,
-              "cards": [
-                {
-                  "type": "weather-forecast",
-                  "entity": "weather.endeavour_hills",
-                  "show_forecast": false
-                },
-                {
-                  "type": "weather-forecast",
-                  "entity": "weather.endeavour_hills_hourly",
-                  "show_forecast": false
-                },
-                {
-                  "type": "weather-forecast",
-                  "entity": "weather.melbpc",
-                  "show_forecast": false
-                }
-              ]
-            },
-            {
-              "type": "entities",
-              "entities": [
-                "light.wled"
-              ],
-              "title": "light"
-            },
-            {
-              "type": "entities",
-              "entities": [
-                "select.wled_playlist",
-                "select.wled_preset"
-              ],
-              "title": "select"
-            },
-            {
               "type": "custom:bom-weather-card",
               "title": "BOM Weather Moorabbin",
               "entity_current_conditions": "sensor.moorabbin_icon_descriptor_0",
@@ -174,6 +96,84 @@
               "slot_r3": "uv_summary",
               "slot_r4": "fire_danger_summary",
               "slot_r5": "sun_following"
+            },
+            {
+              "type": "entities",
+              "entities": [
+                "sensor.mh_z19_co2_value",
+                "sensor.mh_z19_temperature"
+              ],
+              "title": "Maker Room"
+            },
+            {
+              "type": "entities",
+              "entities": [
+                "sensor.hacs"
+              ],
+              "title": "Dungeon"
+            },
+            {
+              "type": "entities",
+              "entities": [
+                "person.ha"
+              ]
+            },
+            {
+              "type": "entities",
+              "entities": [
+                "sensor.download_speed",
+                "sensor.endeavour_hills_short_text_0",
+                "sensor.endeavour_hills_short_text_1",
+                "sensor.ookla_speedtest_data",
+                "sensor.ping_latency",
+                "sensor.scoresby_humidity",
+                "sensor.scoresby_rain_since_9am",
+                "sensor.scoresby_temp",
+                "sensor.scoresby_temp_feels_like",
+                "sensor.solar_e_today",
+                "sensor.solar_error",
+                "sensor.solar_pac",
+                "sensor.solar_status",
+                "sensor.upload_speed"
+              ],
+              "title": "Sensor"
+            },
+            {
+              "type": "grid",
+              "square": false,
+              "columns": 1,
+              "cards": [
+                {
+                  "type": "weather-forecast",
+                  "entity": "weather.endeavour_hills",
+                  "show_forecast": false
+                },
+                {
+                  "type": "weather-forecast",
+                  "entity": "weather.endeavour_hills_hourly",
+                  "show_forecast": false
+                },
+                {
+                  "type": "weather-forecast",
+                  "entity": "weather.melbpc",
+                  "show_forecast": false
+                }
+              ]
+            },
+            {
+              "type": "entities",
+              "entities": [
+                "light.wled"
+              ],
+              "title": "light"
+            },
+            {
+              "type": "entities",
+              "entities": [
+                "select.wled_playlist",
+                "select.wled_preset"
+              ],
+              "title": "select"
             },
             {
               "type": "entities",
