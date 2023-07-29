@@ -401,7 +401,25 @@
           "title": "Inverter",
           "path": "inverter",
           "badges": [],
-          "cards": []
+          "cards": [
+            {
+              "type": "custom:apexcharts-card",
+              "header": {
+                "show": true,
+                "title": "ApexCharts-Card",
+                "show_states": true,
+                "colorize_states": true
+              },
+              "series": [
+                {
+                  "entity": "sensor.hacs"
+                },
+                {
+                  "entity": "sensor.download_speed"
+                }
+              ]
+            }
+          ]
         }
       ]
     }
