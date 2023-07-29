@@ -178,6 +178,12 @@
               ]
             }
           ]
+        },
+        {
+          "title": "Inverter",
+          "path": "inverter",
+          "badges": [],
+          "cards": []
         }
       ]
     }
