@@ -392,12 +392,6 @@
           ]
         },
         {
-          "title": "moo",
-          "path": "moo",
-          "badges": [],
-          "cards": []
-        },
-        {
           "title": "Inverter",
           "path": "inverter",
           "badges": [],
@@ -437,7 +431,7 @@
                   },
                   {
                     "title": {
-                      "text": "Energy Imported Today",
+                      "text": "Energy Generated Today",
                       "color": "rgb(0, 150, 255)"
                     },
                     "opposite": true,
