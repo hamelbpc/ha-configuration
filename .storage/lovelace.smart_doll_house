@@ -178,6 +178,12 @@
               ]
             }
           ]
+        },
+        {
+          "title": "boo",
+          "path": "boo",
+          "badges": [],
+          "cards": []
         }
       ]
     }
