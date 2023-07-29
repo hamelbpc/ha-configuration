@@ -390,6 +390,12 @@
               "hours_to_show": 72
             }
           ]
+        },
+        {
+          "title": "boo",
+          "path": "boo",
+          "badges": [],
+          "cards": []
         }
       ]
     }
