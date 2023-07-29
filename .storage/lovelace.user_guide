@@ -93,6 +93,12 @@
               ]
             }
           ]
+        },
+        {
+          "title": "REMOTE ACCESS",
+          "path": "remote-access",
+          "badges": [],
+          "cards": []
         }
       ],
       "title": "User Guide"
