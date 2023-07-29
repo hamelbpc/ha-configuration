@@ -418,6 +418,24 @@
                   "entity": "sensor.solar_e_today"
                 }
               ]
+            },
+            {
+              "type": "custom:apexcharts-card",
+              "header": {
+                "show": true,
+                "title": "Solar Inverter Data",
+                "show_states": true,
+                "colorize_states": true
+              },
+              "graph_span": "7d",
+              "series": [
+                {
+                  "entity": "sensor.solar_pac"
+                },
+                {
+                  "entity": "sensor.solar_e_today"
+                }
+              ]
             }
           ]
         }
