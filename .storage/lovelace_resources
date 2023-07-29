@@ -18,6 +18,11 @@
         "url": "/hacsfiles/apexcharts-card/apexcharts-card.js?hacstag=331701152204",
         "type": "module",
         "id": "6b4d46f3513d40aabab151a29fb79ab6"
+      },
+      {
+        "id": "6f58d12cd0414aaab4b882524cc927f7",
+        "url": "/hacsfiles/bom-weather-card/bom-weather-card.js?hacstag=195497310114",
+        "type": "module"
       }
     ]
   }
