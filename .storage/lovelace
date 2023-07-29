@@ -430,12 +430,43 @@
               "graph_span": "7d",
               "series": [
                 {
-                  "entity": "sensor.solar_pac"
+                  "entity": "sensor.solar_pac",
+                  "color": "green"
                 },
                 {
-                  "entity": "sensor.solar_e_today"
+                  "entity": "sensor.solar_e_today",
+                  "color": "rgb(0, 150, 255)"
                 }
-              ]
+              ],
+              "apex_config": {
+                "stroke": {
+                  "width": 1.5
+                },
+                "yaxis": [
+                  {
+                    "title": {
+                      "text": "Solar Power",
+                      "color": "green"
+                    },
+                    "min": 39000,
+                    "max": 40000,
+                    "tickAmount": 2,
+                    "decimalsInFloat": 0
+                  },
+                  {
+                    "title": {
+                      "text": "Energy Generated Today",
+                      "color": "rgb(0, 150, 255)"
+                    },
+                    "opposite": true,
+                    "min": 0,
+                    "max": 30,
+                    "tickAmount": 8,
+                    "decimalsInFloat": 0
+                  }
+                ],
+                "y_axis_precision": 0
+              }
             }
           ]
         }
