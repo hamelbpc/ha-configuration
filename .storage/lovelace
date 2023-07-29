@@ -448,8 +448,8 @@
                       "text": "Solar Power",
                       "color": "green"
                     },
-                    "min": 39000,
-                    "max": 40000,
+                    "min": 0,
+                    "max": 4000,
                     "tickAmount": 2,
                     "decimalsInFloat": 0
                   },
