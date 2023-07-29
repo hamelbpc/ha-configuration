@@ -442,7 +442,7 @@
                     },
                     "opposite": true,
                     "min": 0,
-                    "max": 30,
+                    "max": 25,
                     "tickAmount": 8,
                     "decimalsInFloat": 0
                   }
@@ -491,7 +491,7 @@
                     },
                     "opposite": true,
                     "min": 0,
-                    "max": 30,
+                    "max": 25,
                     "tickAmount": 8,
                     "decimalsInFloat": 0
                   }
