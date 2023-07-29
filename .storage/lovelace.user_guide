@@ -98,7 +98,13 @@
           "title": "REMOTE ACCESS",
           "path": "remote-access",
           "badges": [],
-          "cards": []
+          "cards": [
+            {
+              "type": "markdown",
+              "content": "1. http://melbpc2023.cfd\n\nThis requires the Cloudflare Add-on to be started.\n",
+              "title": "Remote access"
+            }
+          ]
         }
       ],
       "title": "User Guide"
