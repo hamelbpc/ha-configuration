@@ -396,6 +396,12 @@
           "path": "moo",
           "badges": [],
           "cards": []
+        },
+        {
+          "title": "Inverter",
+          "path": "inverter",
+          "badges": [],
+          "cards": []
         }
       ]
     }
