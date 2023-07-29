@@ -90,13 +90,6 @@
               "title": "select"
             },
             {
-              "type": "entities",
-              "entities": [
-                "switch.switchstate"
-              ],
-              "title": "PC191HA Smart Plug"
-            },
-            {
               "type": "custom:bom-weather-card",
               "title": "BOM Weather Moorabbin",
               "entity_current_conditions": "sensor.moorabbin_icon_descriptor_0",
@@ -181,6 +174,13 @@
               "slot_r3": "uv_summary",
               "slot_r4": "fire_danger_summary",
               "slot_r5": "sun_following"
+            },
+            {
+              "type": "entities",
+              "entities": [
+                "switch.switchstate"
+              ],
+              "title": "PC191HA Smart Plug"
             }
           ]
         },
