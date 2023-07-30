@@ -580,6 +580,12 @@
               }
             }
           ]
+        },
+        {
+          "title": "Dev",
+          "path": "dev",
+          "badges": [],
+          "cards": []
         }
       ]
     }
