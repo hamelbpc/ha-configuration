@@ -24,6 +24,11 @@
                   "title": "Install HA Supervised over wifi connection"
                 }
               ]
+            },
+            {
+              "type": "markdown",
+              "content": "```\nha jobs options --ignore-conditions healthy\n```",
+              "title": "Unhealthy system (portainer)"
             }
           ]
         },
