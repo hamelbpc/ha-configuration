@@ -1,19 +1,5 @@
 push_to_github:
-  folder_watcher:
-    - folder: /config
-      patterns:
-        - '*.yaml'
-        - '*.yml'
-        - '*.txt'
-        - '*.md'
-        - '*.cpp'
-        - '*.h'
-        - '*.c'
-        - '*.js'
-        - '*.html'
-        - '*.css'
-        - '*.sh'
-        - '*.json'
+
       
   shell_command:
     push_to_github: "./shellscripts/config_folder_changed.sh"
