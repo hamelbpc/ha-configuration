@@ -23,7 +23,7 @@ wifi:
   ssid: !secret wifi_ssid
   password: !secret wifi_password
   ap:
-  use_address: kickstart-bk7231t.local  # try e.g. 192.168.1.54  
+  use_address: kickstart-bk7231t.local  # 
 
 text_sensor:
   - platform: libretiny
