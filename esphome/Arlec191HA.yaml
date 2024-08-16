@@ -25,7 +25,7 @@ wifi:
   ssid: "MelbPC-NUE"
   password: "peachspeak38"  
   ap:
-  use_address: kickstart-bk7231t.local  # 10.10.100.X  TBC
+  # use_address: kickstart-bk7231t.local  # 10.10.100.X  TBC
 
 text_sensor:
   - platform: libretiny
