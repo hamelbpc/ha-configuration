@@ -1,0 +1,30 @@
+esphome:
+  name: pc191ha
+  friendly_name: PC191HA
+
+bk72xx:
+  board: generic-bk7231t-qfn32-tuya
+
+# Enable logging
+logger:
+
+# Enable Home Assistant API
+api:
+  encryption:
+    key: "Lret2oAy/N37IHpswkIXVxaki69o8N1qu/t2IKtMZVY="
+
+ota:
+  - platform: esphome
+    password: "9988e9cc8b02bec50a65351b7c80a32f"
+
+wifi:
+  ssid: !secret wifi_ssid
+  password: !secret wifi_password
+
+  # Enable fallback hotspot (captive portal) in case wifi connection fails
+  ap:
+    ssid: "Pc191Ha Fallback Hotspot"
+    password: "K89pnkSxR6JT"
+
+captive_portal:
+    
