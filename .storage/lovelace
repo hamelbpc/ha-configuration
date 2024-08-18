@@ -585,7 +585,16 @@
           "title": "Dev",
           "path": "dev",
           "badges": [],
-          "cards": []
+          "cards": [
+            {
+              "type": "entities",
+              "entities": [
+                {
+                  "entity": "input_boolean.testing_input_toggle"
+                }
+              ]
+            }
+          ]
         }
       ]
     }
