@@ -13,7 +13,7 @@ captive_portal:
 mdns:
 
 api:
-  password: ""
+# password: ""
 
 ota:
   platform: esphome
