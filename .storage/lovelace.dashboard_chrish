@@ -11,8 +11,12 @@
             {
               "type": "entities",
               "entities": [
-                "switch.relay_1"
-              ]
+                {
+                  "entity": "switch.relay_1",
+                  "name": "AV Power Switch"
+                }
+              ],
+              "title": "AV Power Switch"
             }
           ]
         }
