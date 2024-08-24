@@ -36,6 +36,14 @@
         "mode": "storage",
         "require_admin": false,
         "show_in_sidebar": true
+      },
+      {
+        "id": "dashboard_chrish",
+        "show_in_sidebar": true,
+        "title": "ChrisH",
+        "require_admin": false,
+        "mode": "storage",
+        "url_path": "dashboard-chrish"
       }
     ]
   }

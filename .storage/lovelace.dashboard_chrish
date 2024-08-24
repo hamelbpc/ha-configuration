@@ -6,7 +6,15 @@
     "config": {
       "views": [
         {
-          "title": "Home"
+          "title": "Home",
+          "cards": [
+            {
+              "type": "entities",
+              "entities": [
+                "switch.relay_1"
+              ]
+            }
+          ]
         }
       ]
     }
