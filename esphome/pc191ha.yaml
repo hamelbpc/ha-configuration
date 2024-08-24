@@ -1,5 +1,5 @@
 esphome:
-  name: upk2esphome-bk7231t
+  name: upk2esphome-bk7231t2
 
 bk72xx:
   board: generic-bk7231t-qfn32-tuya
