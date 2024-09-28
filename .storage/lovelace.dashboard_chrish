@@ -12,11 +12,11 @@
               "type": "entities",
               "entities": [
                 {
-                  "entity": "switch.relay_1",
+                  "entity": "switch.relay_1_2",
                   "name": "AV Power Switch"
                 },
                 {
-                  "entity": "sensor.bl0937_power"
+                  "entity": "sensor.bl0937_power_2"
                 }
               ],
               "title": "AV Power Switch"
