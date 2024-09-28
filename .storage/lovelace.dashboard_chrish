@@ -17,6 +17,12 @@
                 },
                 {
                   "entity": "sensor.bl0937_power_2"
+                },
+                {
+                  "entity": "sensor.bl0937_current_2"
+                },
+                {
+                  "entity": "sensor.av_smart_switch_voltage"
                 }
               ],
               "title": "AV Power Switch"
