@@ -1,5 +1,3 @@
-
-
 esphome:
   name: arlec_pc189ha_1
   platform: ESP8266
