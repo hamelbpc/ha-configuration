@@ -178,7 +178,9 @@
             {
               "type": "entities",
               "entities": [
-                "switch.switchstate"
+                {
+                  "entity": "switch.relay_1_2"
+                }
               ],
               "title": "PC191HA Smart Plug"
             }
